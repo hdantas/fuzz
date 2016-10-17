@@ -1,0 +1,60 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+__pycache__
+
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.csv
+
+
+# OS generated files #
+######################
+.DS_Store
+Icon?
+Thumbs.db
+
+
+# Temp files #
+##############
+*~
+
+
+# IDE files #
+#############
+.idea
+
+
+# Virtual env files #
+#####################
+bin/
+build/
+include/
+lib/
+dev/
+.Python
+_site/
+venv/
+docs/_build
+__py
+.coverage
+.cache
+settings/local.py
+*.collection
