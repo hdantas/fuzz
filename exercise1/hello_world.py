@@ -1,4 +1,7 @@
-from sulley import *
+from sulley import (
+    s_initialize, s_string, s_delim,
+    s_static, s_get, sessions
+)
 
 s_initialize('hello_world')
 
