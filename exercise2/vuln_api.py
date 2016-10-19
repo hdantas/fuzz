@@ -8,6 +8,8 @@ from sulley import (
 # Fuzz HTTP request (for /vulnerableapi)
 # Show on screen what a HTTP request looks like and spec for vulnerableapi
 # Show solution
+host = 'vulnerableapi.herokuapp.com'
+port = 443
 
 s_initialize('vuln_api')
 s_string('POST')
@@ -15,7 +17,7 @@ s_delim(' ')
 s_string('/api/pet')
 s_delim(' ')
 s_static(' HTTP/1.1\r\n')
-s_static('Host: vulnerableapi.herokuapp.com\r\n')
+s_static('Host: {}\r\n'.format(host))
 s_static('\r\n')
 s_static('Connection: keep-alive\r\n')
 s_static('Content-Type: application/json')
@@ -45,10 +47,8 @@ if s_block_start('payload'):
 s_block_end()
 
 
-# sess = sessions.session(proto='ssl')
-# target = sessions.target("vulnerableapi.herokuapp.com", 443)
-sess = sessions.session()
-target = sessions.target("0.0.0.0", 1337)
+sess = sessions.session(proto='ssl')
+target = sessions.target(host, port)
 sess.add_target(target)
 sess.connect(s_get("vuln_api"))
 sess.fuzz()
