@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>sulley.sessions.session</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="sulley-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pedram.openrce.org">Sulley: Fuzzing Framework</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="sulley-module.html">Package&nbsp;sulley</a> ::
+        <a href="sulley.sessions-module.html">Module&nbsp;sessions</a> ::
+        Class&nbsp;session
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="sulley.sessions.session-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class session</h1><p class="nomargin-top"><span class="codelink"><a href="sulley.sessions-pysrc.html#session">source&nbsp;code</a></span></p>
+<pre class="base-tree">
+         object --+    
+                  |    
+<a href="sulley.pgraph.graph%27.graph-class.html">pgraph.graph'.graph</a> --+
+                      |
+                     <strong class="uidshort">session</strong>
+</pre>
+
+<hr />
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley.sessions.session-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">session_filename</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">skip</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">sleep_time</span>=<span class="summary-sig-default">1.0</span>,
+        <span class="summary-sig-arg">log_level</span>=<span class="summary-sig-default">20</span>,
+        <span class="summary-sig-arg">logfile</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">logfile_level</span>=<span class="summary-sig-default">10</span>,
+        <span class="summary-sig-arg">proto</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">tcp</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">bind</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">restart_interval</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">timeout</span>=<span class="summary-sig-default">5.0</span>,
+        <span class="summary-sig-arg">web_port</span>=<span class="summary-sig-default">26000</span>,
+        <span class="summary-sig-arg">crash_threshold</span>=<span class="summary-sig-default">3</span>,
+        <span class="summary-sig-arg">restart_sleep_time</span>=<span class="summary-sig-default">300</span>)</span><br />
+      Extends pgraph.graph and provides a container for architecting 
+      protocol dialogs.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley.sessions-pysrc.html#session.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley.sessions.session-class.html#add_node" class="summary-sig-name">add_node</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">node</span>)</span><br />
+      Add a pgraph node to the graph.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley.sessions-pysrc.html#session.add_node">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley.sessions.session-class.html#add_target" class="summary-sig-name">add_target</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">target</span>)</span><br />
+      Add a target to the session.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley.sessions-pysrc.html#session.add_target">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">pgraph.edge</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley.sessions.session-class.html#connect" class="summary-sig-name">connect</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">src</span>,
+        <span class="summary-sig-arg">dst</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">callback</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Create a connection between the two requests (nodes) and register an 
+      optional callback to process in between transmissions of the source 
+      and destination request.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley.sessions-pysrc.html#session.connect">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley.sessions.session-class.html#export_file" class="summary-sig-name">export_file</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Dump various object values to disk.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley.sessions-pysrc.html#session.export_file">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley.sessions.session-class.html#fuzz" class="summary-sig-name">fuzz</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">this_node</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">path</span>=<span class="summary-sig-default"><code class="variable-group">[</code><code class="variable-group">]</code></span>)</span><br />
+      Call this routine to get the ball rolling.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley.sessions-pysrc.html#session.fuzz">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley.sessions.session-class.html#import_file" class="summary-sig-name">import_file</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Load varous object values from disk.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley.sessions-pysrc.html#session.import_file">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">Integer</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley.sessions.session-class.html#num_mutations" class="summary-sig-name">num_mutations</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">this_node</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">path</span>=<span class="summary-sig-default"><code class="variable-group">[</code><code class="variable-group">]</code></span>)</span><br />
+      Number of total mutations in the graph.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley.sessions-pysrc.html#session.num_mutations">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="pause"></a><span class="summary-sig-name">pause</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      If thet pause flag is raised, enter an endless loop until it is 
+      lowered.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley.sessions-pysrc.html#session.pause">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley.sessions.session-class.html#poll_pedrpc" class="summary-sig-name">poll_pedrpc</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">target</span>)</span><br />
+      Poll the PED-RPC endpoints (netmon, procmon etc...) for the target.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley.sessions-pysrc.html#session.poll_pedrpc">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley.sessions.session-class.html#post_send" class="summary-sig-name">post_send</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">sock</span>)</span><br />
+      Overload or replace this routine to specify actions to run after to 
+      each fuzz request.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley.sessions-pysrc.html#session.post_send">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley.sessions.session-class.html#pre_send" class="summary-sig-name">pre_send</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">sock</span>)</span><br />
+      Overload or replace this routine to specify actions to run prior to 
+      each fuzz request.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley.sessions-pysrc.html#session.pre_send">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley.sessions.session-class.html#restart_target" class="summary-sig-name">restart_target</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">target</span>,
+        <span class="summary-sig-arg">stop_first</span>=<span class="summary-sig-default">True</span>)</span><br />
+      Restart the fuzz target.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley.sessions-pysrc.html#session.restart_target">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="server_init"></a><span class="summary-sig-name">server_init</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Called by fuzz() on first run (not on recursive re-entry) to 
+      initialize variables, web interface, etc...</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley.sessions-pysrc.html#session.server_init">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley.sessions.session-class.html#transmit" class="summary-sig-name">transmit</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">sock</span>,
+        <span class="summary-sig-arg">node</span>,
+        <span class="summary-sig-arg">edge</span>,
+        <span class="summary-sig-arg">target</span>)</span><br />
+      Render and transmit a node, process callbacks accordingly.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley.sessions-pysrc.html#session.transmit">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="sulley.pgraph.graph%27.graph-class.html">pgraph.graph'.graph</a></code></b>:
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#add_cluster">add_cluster</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#add_edge">add_edge</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#add_graph">add_graph</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#del_cluster">del_cluster</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#del_edge">del_edge</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#del_graph">del_graph</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#del_node">del_node</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#edges_from">edges_from</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#edges_to">edges_to</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#find_cluster">find_cluster</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#find_cluster_by_node">find_cluster_by_node</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#find_edge">find_edge</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#find_node">find_node</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#graph_cat">graph_cat</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#graph_down">graph_down</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#graph_intersect">graph_intersect</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#graph_proximity">graph_proximity</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#graph_sub">graph_sub</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#graph_up">graph_up</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#render_graph_gml">render_graph_gml</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#render_graph_graphviz">render_graph_graphviz</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#render_graph_udraw">render_graph_udraw</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#render_graph_udraw_update">render_graph_udraw_update</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#sorted_nodes">sorted_nodes</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#update_node_id">update_node_id</a></code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="sulley.pgraph.graph%27.graph-class.html">pgraph.graph'.graph</a></code></b>:
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#clusters">clusters</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#edges">edges</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#id">id</a></code>,
+      <code><a href="sulley.pgraph.graph%27.graph-class.html#nodes">nodes</a></code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== INSTANCE VARIABLES ==================== -->
+<a name="section-InstanceVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="pause_flag"></a><span class="summary-name">pause_flag</span><br />
+      If the supplied message falls under the current log level, print the 
+      specified message to screen.
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Properties</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Properties"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">session_filename</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">skip</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">sleep_time</span>=<span class="sig-default">1.0</span>,
+        <span class="sig-arg">log_level</span>=<span class="sig-default">20</span>,
+        <span class="sig-arg">logfile</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">logfile_level</span>=<span class="sig-default">10</span>,
+        <span class="sig-arg">proto</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">tcp</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">bind</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">restart_interval</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">timeout</span>=<span class="sig-default">5.0</span>,
+        <span class="sig-arg">web_port</span>=<span class="sig-default">26000</span>,
+        <span class="sig-arg">crash_threshold</span>=<span class="sig-default">3</span>,
+        <span class="sig-arg">restart_sleep_time</span>=<span class="sig-default">300</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley.sessions-pysrc.html#session.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Extends pgraph.graph and provides a container for architecting 
+  protocol dialogs.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>session_filename</code></strong> (String) - (Optional, def=None) Filename to serialize persistant data to</li>
+        <li><strong class="pname"><code>skip</code></strong> (Integer) - (Optional, def=0) Number of test cases to skip</li>
+        <li><strong class="pname"><code>sleep_time</code></strong> (Float) - (Optional, def=1.0) Time to sleep in between tests</li>
+        <li><strong class="pname"><code>log_level</code></strong> (Integer) - (Optional, def=logger.INFO) Set the log level</li>
+        <li><strong class="pname"><code>logfile</code></strong> (String) - (Optional, def=None) Name of log file</li>
+        <li><strong class="pname"><code>logfile_level</code></strong> (Integer) - (Optional, def=logger.INFO) Set the log level for the logfile</li>
+        <li><strong class="pname"><code>proto</code></strong> (String) - (Optional, def=&quot;tcp&quot;) Communication protocol 
+          (&quot;tcp&quot;, &quot;udp&quot;, &quot;ssl&quot;)</li>
+        <li><strong class="pname"><code>bind</code></strong> (Tuple (host, port)) - (Optional, def=random) Socket bind address and port</li>
+        <li><strong class="pname"><code>timeout</code></strong> (Float) - (Optional, def=5.0) Seconds to wait for a send/recv prior to 
+          timing out</li>
+        <li><strong class="pname"><code>restart_sleep_time</code></strong> (Integer) - Optional, def=300) Time in seconds to sleep when target can't be 
+          restarted</li>
+        <li><strong class="pname"><code>web_port</code></strong> (Integer) - (Optional, def=26000) Port for monitoring fuzzing campaign via a 
+          web browser</li>
+        <li><strong class="pname"><code>crash_threshold</code></strong> (Integer @kwarg crash_threshold     (Optional, def=3) Maximum 
+          number of crashes allowed before a node is exhaust)</li>
+        <li><strong class="pname"><code>restart_interval</code></strong> (Integer @kwarg restart_interval    (Optional, def=0) Restart the 
+          target after n test cases, disable by setting to 0)</li>
+    </ul></dd>
+    <dt>Overrides:
+        object.__init__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="add_node"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">add_node</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">node</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley.sessions-pysrc.html#session.add_node">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Add a pgraph node to the graph. We overload this routine to 
+  automatically generate and assign an ID whenever a node is added.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>node</code></strong> (pGRAPH Node) - Node to add to session graph</li>
+    </ul></dd>
+    <dt>Overrides:
+        <a href="sulley.pgraph.graph%27.graph-class.html#add_node">pgraph.graph'.graph.add_node</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="add_target"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">add_target</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">target</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley.sessions-pysrc.html#session.add_target">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Add a target to the session. Multiple targets can be added for 
+  parallel fuzzing.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>target</code></strong> (session.target) - Target to add to session</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="connect"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">connect</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">src</span>,
+        <span class="sig-arg">dst</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">callback</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley.sessions-pysrc.html#session.connect">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create a connection between the two requests (nodes) and register an 
+  optional callback to process in between transmissions of the source and 
+  destination request. Leverage this functionality to handle situations 
+  such as challenge response systems. The session class maintains a top 
+  level node that all initial requests must be connected to. Example:</p>
+<pre class="literalblock">
+   sess = sessions.session()
+   sess.connect(sess.root, s_get(&quot;HTTP&quot;))
+</pre>
+  <p>If given only a single parameter, sess.connect() will default to 
+  attaching the supplied node to the root node. This is a convenient alias 
+  and is identical to the second line from the above example:</p>
+<pre class="literalblock">
+   sess.connect(s_get(&quot;HTTP&quot;))
+</pre>
+  <p>If you register callback method, it must follow this prototype:</p>
+<pre class="literalblock">
+   def callback(session, node, edge, sock)
+</pre>
+  <p>Where node is the node about to be sent, edge is the last edge along 
+  the current fuzz path to &quot;node&quot;, session is a pointer to the 
+  session instance which is useful for snagging data such as 
+  sesson.last_recv which contains the data returned from the last socket 
+  transmission and sock is the live socket. A callback is also useful in 
+  situations where, for example, the size of the next packet is specified 
+  in the first packet. As another example, if you need to fill in the 
+  dynamic IP address of the target register a callback that snags the IP 
+  from sock.getpeername()[0].</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>src</code></strong> (String or Request (Node)) - Source request name or request node</li>
+        <li><strong class="pname"><code>dst</code></strong> (String or Request (Node)) - Destination request name or request node</li>
+        <li><strong class="pname"><code>callback</code></strong> (Function) - (Optional, def=None) Callback function to pass received data to 
+          between node xmits</li>
+    </ul></dd>
+    <dt>Returns: pgraph.edge</dt>
+        <dd>The edge between the src and dst.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="export_file"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">export_file</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley.sessions-pysrc.html#session.export_file">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Dump various object values to disk.</p>
+  <dl class="fields">
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        import_file()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="fuzz"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">fuzz</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">this_node</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">path</span>=<span class="sig-default"><code class="variable-group">[</code><code class="variable-group">]</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley.sessions-pysrc.html#session.fuzz">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Call this routine to get the ball rolling. No arguments are necessary 
+  as they are both utilized internally during the recursive traversal of 
+  the session graph.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>this_node</code></strong> (request (node)) - (Optional, def=None) Current node that is being fuzzed.</li>
+        <li><strong class="pname"><code>path</code></strong> (List) - (Optional, def=[]) Nodes along the path to the current one being 
+          fuzzed.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="import_file"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">import_file</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley.sessions-pysrc.html#session.import_file">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Load varous object values from disk.</p>
+  <dl class="fields">
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        export_file()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="num_mutations"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">num_mutations</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">this_node</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">path</span>=<span class="sig-default"><code class="variable-group">[</code><code class="variable-group">]</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley.sessions-pysrc.html#session.num_mutations">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Number of total mutations in the graph. The logic of this routine is 
+  identical to that of fuzz(). See fuzz() for inline comments. The member 
+  varialbe self.total_num_mutations is updated appropriately by this 
+  routine.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>this_node</code></strong> (request (node)) - (Optional, def=None) Current node that is being fuzzed.</li>
+        <li><strong class="pname"><code>path</code></strong> (List) - (Optional, def=[]) Nodes along the path to the current one being 
+          fuzzed.</li>
+    </ul></dd>
+    <dt>Returns: Integer</dt>
+        <dd>Total number of mutations in this session.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="poll_pedrpc"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">poll_pedrpc</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">target</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley.sessions-pysrc.html#session.poll_pedrpc">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Poll the PED-RPC endpoints (netmon, procmon etc...) for the 
+  target.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>target</code></strong> (session.target) - Session target whose PED-RPC services we are polling</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="post_send"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">post_send</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">sock</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley.sessions-pysrc.html#session.post_send">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Overload or replace this routine to specify actions to run after to 
+  each fuzz request. The order of events is as follows:</p>
+<pre class="literalblock">
+   pre_send() - req - callback ... req - callback - post_send()
+</pre>
+  <p>When fuzzing RPC for example, register this method to tear down the 
+  RPC request.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sock</code></strong> (Socket) - Connected socket to target</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        pre_send()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="pre_send"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">pre_send</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">sock</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley.sessions-pysrc.html#session.pre_send">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Overload or replace this routine to specify actions to run prior to 
+  each fuzz request. The order of events is as follows:</p>
+<pre class="literalblock">
+   pre_send() - req - callback ... req - callback - post_send()
+</pre>
+  <p>When fuzzing RPC for example, register this method to establish the 
+  RPC bind.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sock</code></strong> (Socket) - Connected socket to target</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        pre_send()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="restart_target"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">restart_target</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">target</span>,
+        <span class="sig-arg">stop_first</span>=<span class="sig-default">True</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley.sessions-pysrc.html#session.restart_target">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Restart the fuzz target. If a VMControl is available revert the 
+  snapshot, if a process monitor is available restart the target process. 
+  Otherwise, do nothing.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>target</code></strong> (session.target) - Target we are restarting</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="transmit"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">transmit</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">sock</span>,
+        <span class="sig-arg">node</span>,
+        <span class="sig-arg">edge</span>,
+        <span class="sig-arg">target</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley.sessions-pysrc.html#session.transmit">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Render and transmit a node, process callbacks accordingly.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sock</code></strong> (Socket) - Socket to transmit node on</li>
+        <li><strong class="pname"><code>node</code></strong> (Request (Node)) - Request/Node to transmit</li>
+        <li><strong class="pname"><code>edge</code></strong> (Connection (pgraph.edge)) - Edge along the current fuzz path from &quot;node&quot; to next 
+          node.</li>
+        <li><strong class="pname"><code>target</code></strong> (session.target) - Target we are transmitting to</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="sulley-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pedram.openrce.org">Sulley: Fuzzing Framework</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Wed Oct 19 23:24:35 2016
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

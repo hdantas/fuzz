@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class Hierarchy</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="sulley-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Trees&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pedram.openrce.org">Sulley: Fuzzing Framework</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">&nbsp;</td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="class-tree.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<center><b>
+ [ <a href="module-tree.html">Module Hierarchy</a>
+ | <a href="class-tree.html">Class Hierarchy</a> ]
+</b></center><br />
+<h1 class="epydoc">Class Hierarchy</h1>
+<ul class="nomargin-top">
+    <li> <strong class="uidlink">SocketServer.BaseRequestHandler</strong>:
+      <em class="summary">Base class for request handler classes.</em>
+    <ul>
+    <li> <strong class="uidlink">SocketServer.StreamRequestHandler</strong>:
+      <em class="summary">Define self.rfile and self.wfile for stream sockets.</em>
+    <ul>
+    <li> <strong class="uidlink">BaseHTTPServer.BaseHTTPRequestHandler</strong>:
+      <em class="summary">HTTP request handler base class.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="sulley.sessions.web_interface_handler-class.html">sulley.sessions.web_interface_handler</a></strong>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink">SocketServer.BaseServer</strong>:
+      <em class="summary">Base class for server classes.</em>
+    <ul>
+    <li> <strong class="uidlink">SocketServer.TCPServer</strong>:
+      <em class="summary">Base class for various socket-based server classes.</em>
+    <ul>
+    <li> <strong class="uidlink">BaseHTTPServer.HTTPServer</strong>
+    <ul>
+    <li> <strong class="uidlink"><a href="sulley.sessions.web_interface_server-class.html">sulley.sessions.web_interface_server</a></strong>:
+      <em class="summary">http://docs.python.org/lib/module-BaseHTTPServer.html</em>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink">rfc822.Message</strong>:
+      <em class="summary">Represents a single RFC 2822-compliant message.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="mimetools.Message-class.html">mimetools.Message</a></strong>:
+      <em class="summary">A derived class of rfc822.Message that knows about MIME headers and
+        contains some hooks for decoding encoded and multipart messages.</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.blocks.block-class.html">sulley.blocks.block</a></strong>
+    <ul>
+    <li> <strong class="uidlink"><a href="sulley.legos.misc.dns_hostname-class.html">sulley.legos.misc.dns_hostname</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.legos.ber.integer-class.html">sulley.legos.ber.integer</a></strong>:
+      <em class="summary">[0x02][0x04][dword]</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.legos.dcerpc.ndr_conformant_array-class.html">sulley.legos.dcerpc.ndr_conformant_array</a></strong>:
+      <em class="summary">Note: this is not for fuzzing the RPC protocol but rather just 
+        representing an NDR string for fuzzing the actual client.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.legos.dcerpc.ndr_string-class.html">sulley.legos.dcerpc.ndr_string</a></strong>:
+      <em class="summary">Note: this is not for fuzzing the RPC protocol but rather just 
+        representing an NDR string for fuzzing the actual client.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.legos.dcerpc.ndr_wstring-class.html">sulley.legos.dcerpc.ndr_wstring</a></strong>:
+      <em class="summary">Note: this is not for fuzzing the RPC protocol but rather just 
+        representing an NDR string for fuzzing the actual client.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.legos.xdr.string-class.html">sulley.legos.xdr.string</a></strong>:
+      <em class="summary">Note: this is not for fuzzing the XDR protocol but rather just 
+        representing an XDR string for fuzzing the actual client.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.legos.ber.string-class.html">sulley.legos.ber.string</a></strong>:
+      <em class="summary">[0x04][0x84][dword length][string]</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.legos.misc.tag-class.html">sulley.legos.misc.tag</a></strong>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.blocks.checksum-class.html">sulley.blocks.checksum</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.pedrpc.client-class.html">sulley.pedrpc.client</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.instrumentation.external-class.html">sulley.instrumentation.external</a></strong>:
+      <em class="summary">External instrumentation class Monitor a target which doesn't 
+        support a debugger, allowing external commands to be called</em>
+    </li>
+    <li> <strong class="uidlink">object</strong>:
+      <em class="summary">The most base type</em>
+    <ul>
+    <li> <strong class="uidlink">exceptions.BaseException</strong>:
+      <em class="summary">Common base class for all exceptions</em>
+    <ul>
+    <li> <strong class="uidlink">exceptions.Exception</strong>:
+      <em class="summary">Common base class for all non-exit exceptions.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="sulley.sex.SullyRuntimeError-class.html">sulley.sex.SullyRuntimeError</a></strong>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.utils.crc16.CRC16-class.html">sulley.utils.crc16.CRC16</a></strong>:
+      <em class="summary">Class interface, like the Python library's cryptographic hash 
+        functions (which CRC's are definitely not.)</em>
+    </li>
+    <li> <strong class="uidlink">threading._Verbose</strong>
+    <ul>
+    <li> <strong class="uidlink">threading.Thread</strong>:
+      <em class="summary">A class that represents a thread of control.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="sulley.sessions.web_interface_thread-class.html">sulley.sessions.web_interface_thread</a></strong>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.primitives.base_primitive-class.html">sulley.primitives.base_primitive</a></strong>:
+      <em class="summary">The primitive base class implements common functionality shared 
+        across most primitives.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="sulley.primitives.bit_field-class.html">sulley.primitives.bit_field</a></strong>
+    <ul>
+    <li> <strong class="uidlink"><a href="sulley.primitives.byte-class.html">sulley.primitives.byte</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.primitives.dword-class.html">sulley.primitives.dword</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.primitives.qword-class.html">sulley.primitives.qword</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.primitives.word-class.html">sulley.primitives.word</a></strong>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.primitives.delim-class.html">sulley.primitives.delim</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.primitives.group-class.html">sulley.primitives.group</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.primitives.random_data-class.html">sulley.primitives.random_data</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.primitives.static-class.html">sulley.primitives.static</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.primitives.string-class.html">sulley.primitives.string</a></strong>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.pgraph.cluster.cluster-class.html">sulley.pgraph.cluster.cluster</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.pgraph.edge.edge-class.html">sulley.pgraph.edge.edge</a></strong>
+    <ul>
+    <li> <strong class="uidlink"><a href="sulley.sessions.connection-class.html">sulley.sessions.connection</a></strong>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.pgraph.graph%27.graph-class.html">sulley.pgraph.graph'.graph</a></strong>
+    <ul>
+    <li> <strong class="uidlink"><a href="sulley.sessions.session-class.html">sulley.sessions.session</a></strong>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.pgraph.node%27.node-class.html">sulley.pgraph.node'.node</a></strong>
+    <ul>
+    <li> <strong class="uidlink"><a href="sulley.blocks.request-class.html">sulley.blocks.request</a></strong>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.blocks.repeat-class.html">sulley.blocks.repeat</a></strong>:
+      <em class="summary">This block type is kind of special in that it is a hybrid between a
+        block and a primitive (it can be fuzzed).</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.pedrpc.server-class.html">sulley.pedrpc.server</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.blocks.size-class.html">sulley.blocks.size</a></strong>:
+      <em class="summary">This block type is kind of special in that it is a hybrid between a
+        block and a primitive (it can be fuzzed).</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.sessions.target-class.html">sulley.sessions.target</a></strong>:
+      <em class="summary">Target descriptor container.</em>
+    </li>
+</ul>
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="sulley-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Trees&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pedram.openrce.org">Sulley: Fuzzing Framework</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Wed Oct 19 23:24:35 2016
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

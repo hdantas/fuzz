@@ -1,0 +1,2961 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>sulley</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pedram.openrce.org">Sulley: Fuzzing Framework</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;sulley
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="sulley-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PACKAGE DESCRIPTION ==================== -->
+<h1 class="epydoc">Package sulley</h1><p class="nomargin-top"><span class="codelink"><a href="sulley-pysrc.html">source&nbsp;code</a></span></p>
+<!-- ==================== SUBMODULES ==================== -->
+<a name="section-Submodules"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Submodules</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Submodules"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr><td class="summary">
+  <ul class="nomargin">
+    <li> <strong class="uidlink"><a href="sulley.blocks-module.html">sulley.blocks</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="sulley.instrumentation-module.html">sulley.instrumentation</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="sulley.legos-module.html">sulley.legos</a></strong>
+    <ul>
+    <li> <strong class="uidlink"><a href="sulley.legos.ber-module.html">sulley.legos.ber</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="sulley.legos.dcerpc-module.html">sulley.legos.dcerpc</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="sulley.legos.misc-module.html">sulley.legos.misc</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="sulley.legos.xdr-module.html">sulley.legos.xdr</a></strong>    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.pedrpc-module.html">sulley.pedrpc</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="sulley.pgraph-module.html">sulley.pgraph</a></strong>
+    <ul>
+    <li> <strong class="uidlink"><a href="sulley.pgraph.cluster-module.html">sulley.pgraph.cluster</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="sulley.pgraph.edge-module.html">sulley.pgraph.edge</a></strong>    </li>
+    <li> <strong class="uidlink">sulley.pgraph.graph</strong>    </li>
+    <li> <strong class="uidlink"><a href="sulley.pgraph.graph%27-module.html">sulley.pgraph.graph'</a></strong>    </li>
+    <li> <strong class="uidlink">sulley.pgraph.node</strong>    </li>
+    <li> <strong class="uidlink"><a href="sulley.pgraph.node%27-module.html">sulley.pgraph.node'</a></strong>    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="sulley.primitives-module.html">sulley.primitives</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="sulley.sessions-module.html">sulley.sessions</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="sulley.sex-module.html">sulley.sex</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="sulley.utils-module.html">sulley.utils</a></strong>
+    <ul>
+    <li> <strong class="uidlink"><a href="sulley.utils.crc16-module.html">sulley.utils.crc16</a></strong>: <em class="summary">Translation from a C code posted to a forum on the Internet.</em>    </li>
+    <li> <strong class="uidlink"><a href="sulley.utils.dcerpc-module.html">sulley.utils.dcerpc</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="sulley.utils.misc-module.html">sulley.utils.misc</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="sulley.utils.scada-module.html">sulley.utils.scada</a></strong>    </li>
+    </ul>
+    </li>
+  </ul></td></tr>
+</table>
+
+<br />
+<!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Functions</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Functions"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">blocks.request</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_get" class="summary-sig-name">s_get</a>(<span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Return the request with the specified name or the current request if 
+      name is not specified.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_get">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_initialize" class="summary-sig-name">s_initialize</a>(<span class="summary-sig-arg">name</span>)</span><br />
+      Initialize a new block request.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_initialize">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">Boolean</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_mutate" class="summary-sig-name">s_mutate</a>()</span><br />
+      Mutate the current request and return False if mutations are 
+      exhausted, in which case the request has been reverted back to its 
+      normal form.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_mutate">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">Integer</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_num_mutations" class="summary-sig-name">s_num_mutations</a>()</span><br />
+      Determine the number of repetitions we will be making.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_num_mutations">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">Raw</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_render" class="summary-sig-name">s_render</a>()</span><br />
+      Render out and return the entire contents of the current request.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_render">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_switch" class="summary-sig-name">s_switch</a>(<span class="summary-sig-arg">name</span>)</span><br />
+      Change the currect request to the one specified by &quot;name&quot;.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_switch">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_block_start" class="summary-sig-name">s_block_start</a>(<span class="summary-sig-arg">name</span>,
+        <span class="summary-sig-arg">group</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">encoder</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">dep</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">dep_value</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">dep_values</span>=<span class="summary-sig-default"><code class="variable-group">[</code><code class="variable-group">]</code></span>,
+        <span class="summary-sig-arg">dep_compare</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">==</code><code class="variable-quote">'</code></span>)</span><br />
+      Open a new block under the current request.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_block_start">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_block_end" class="summary-sig-name">s_block_end</a>(<span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Close the last opened block.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_block_end">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_checksum" class="summary-sig-name">s_checksum</a>(<span class="summary-sig-arg">block_name</span>,
+        <span class="summary-sig-arg">algorithm</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">crc32</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">length</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">endian</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Create a checksum block bound to the block with the specified name.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_checksum">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_repeat" class="summary-sig-name">s_repeat</a>(<span class="summary-sig-arg">block_name</span>,
+        <span class="summary-sig-arg">min_reps</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">max_reps</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">step</span>=<span class="summary-sig-default">1</span>,
+        <span class="summary-sig-arg">variable</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Repeat the rendered contents of the specified block cycling from 
+      min_reps to max_reps counting by step.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_repeat">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_size" class="summary-sig-name">s_size</a>(<span class="summary-sig-arg">block_name</span>,
+        <span class="summary-sig-arg">offset</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">length</span>=<span class="summary-sig-default">4</span>,
+        <span class="summary-sig-arg">endian</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">format</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">inclusive</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">signed</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">math</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Create a sizer block bound to the block with the specified name.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_size">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_update" class="summary-sig-name">s_update</a>(<span class="summary-sig-arg">name</span>,
+        <span class="summary-sig-arg">value</span>)</span><br />
+      Update the value of the named primitive in the currently open 
+      request.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_update">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_binary" class="summary-sig-name">s_binary</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Parse a variable format binary string into a static value and push it
+      onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_delim" class="summary-sig-name">s_delim</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Push a delimiter onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_delim">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_group" class="summary-sig-name">s_group</a>(<span class="summary-sig-arg">name</span>,
+        <span class="summary-sig-arg">values</span>)</span><br />
+      This primitive represents a list of static values, stepping through 
+      each one on mutation.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_group">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_lego" class="summary-sig-name">s_lego</a>(<span class="summary-sig-arg">lego_type</span>,
+        <span class="summary-sig-arg">value</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">options</span>=<span class="summary-sig-default"><code class="variable-group">{</code><code class="variable-group">}</code></span>)</span><br />
+      Legos are pre-built blocks...</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_lego">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_random" class="summary-sig-name">s_random</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">min_length</span>,
+        <span class="summary-sig-arg">max_length</span>,
+        <span class="summary-sig-arg">num_mutations</span>=<span class="summary-sig-default">25</span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">step</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Generate a random chunk of data while maintaining a copy of the 
+      original.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_random">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_static" class="summary-sig-name">s_static</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Push a static value onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_static">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_string" class="summary-sig-name">s_string</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">size</span>=<span class="summary-sig-default">-1</span>,
+        <span class="summary-sig-arg">padding</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">\x00</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">encoding</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">ascii</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">max_len</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Push a string onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_string">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_bit_field" class="summary-sig-name">s_bit_field</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">width</span>,
+        <span class="summary-sig-arg">endian</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">format</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">signed</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">full_range</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Push a variable length bit field onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_bit_field">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_byte" class="summary-sig-name">s_byte</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">endian</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">format</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">signed</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">full_range</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Push a byte onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_byte">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_word" class="summary-sig-name">s_word</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">endian</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">format</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">signed</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">full_range</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Push a word onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_word">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_dword" class="summary-sig-name">s_dword</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">endian</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">format</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">signed</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">full_range</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Push a double word onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_dword">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_qword" class="summary-sig-name">s_qword</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">endian</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">format</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">signed</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">full_range</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Push a quad word onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_qword">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_unknown" class="summary-sig-name">s_unknown</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Push a static value onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_static">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_raw" class="summary-sig-name">s_raw</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Push a static value onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_static">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_dunno" class="summary-sig-name">s_dunno</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Push a static value onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_static">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_sizer" class="summary-sig-name">s_sizer</a>(<span class="summary-sig-arg">block_name</span>,
+        <span class="summary-sig-arg">offset</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">length</span>=<span class="summary-sig-default">4</span>,
+        <span class="summary-sig-arg">endian</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">format</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">inclusive</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">signed</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">math</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Create a sizer block bound to the block with the specified name.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_size">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_bits" class="summary-sig-name">s_bits</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">width</span>,
+        <span class="summary-sig-arg">endian</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">format</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">signed</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">full_range</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Push a variable length bit field onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_bit_field">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_bit" class="summary-sig-name">s_bit</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">width</span>,
+        <span class="summary-sig-arg">endian</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">format</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">signed</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">full_range</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Push a variable length bit field onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_bit_field">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_char" class="summary-sig-name">s_char</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">endian</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">format</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">signed</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">full_range</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Push a byte onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_byte">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_short" class="summary-sig-name">s_short</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">endian</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">format</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">signed</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">full_range</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Push a word onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_word">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_int" class="summary-sig-name">s_int</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">endian</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">format</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">signed</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">full_range</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Push a double word onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_dword">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_long" class="summary-sig-name">s_long</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">endian</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">format</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">signed</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">full_range</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Push a double word onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_dword">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_double" class="summary-sig-name">s_double</a>(<span class="summary-sig-arg">value</span>,
+        <span class="summary-sig-arg">endian</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">format</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">signed</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">full_range</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Push a quad word onto the current block stack.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_qword">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_repeater" class="summary-sig-name">s_repeater</a>(<span class="summary-sig-arg">block_name</span>,
+        <span class="summary-sig-arg">min_reps</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">max_reps</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">step</span>=<span class="summary-sig-default">1</span>,
+        <span class="summary-sig-arg">variable</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">fuzzable</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Repeat the rendered contents of the specified block cycling from 
+      min_reps to max_reps counting by step.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_repeat">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="custom_raise"></a><span class="summary-sig-name">custom_raise</span>(<span class="summary-sig-arg">argument</span>,
+        <span class="summary-sig-arg">msg</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#custom_raise">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_intelword"></a><span class="summary-sig-name">s_intelword</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_intelword">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_intelhalfword"></a><span class="summary-sig-name">s_intelhalfword</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_intelhalfword">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_bigword"></a><span class="summary-sig-name">s_bigword</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_bigword">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_string_lf"></a><span class="summary-sig-name">s_string_lf</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_string_lf">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_string_or_env"></a><span class="summary-sig-name">s_string_or_env</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_string_or_env">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_string_repeat"></a><span class="summary-sig-name">s_string_repeat</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_string_repeat">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_string_variable"></a><span class="summary-sig-name">s_string_variable</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_string_variable">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_string_variables"></a><span class="summary-sig-name">s_string_variables</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_string_variables">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_repeat"></a><span class="summary-sig-name">s_binary_repeat</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_repeat">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_unistring"></a><span class="summary-sig-name">s_unistring</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_unistring">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_unistring_variable"></a><span class="summary-sig-name">s_unistring_variable</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_unistring_variable">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_xdr_string"></a><span class="summary-sig-name">s_xdr_string</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_xdr_string">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_cstring"></a><span class="summary-sig-name">s_cstring</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_cstring">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_intel_halfword_plus_variable"></a><span class="summary-sig-name">s_binary_block_size_intel_halfword_plus_variable</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_intel_halfword_plus_variable">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_halfword_bigendian_variable"></a><span class="summary-sig-name">s_binary_block_size_halfword_bigendian_variable</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_halfword_bigendian_variable">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_word_bigendian_plussome"></a><span class="summary-sig-name">s_binary_block_size_word_bigendian_plussome</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_word_bigendian_plussome">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_word_bigendian_variable"></a><span class="summary-sig-name">s_binary_block_size_word_bigendian_variable</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_word_bigendian_variable">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_halfword_bigendian_mult"></a><span class="summary-sig-name">s_binary_block_size_halfword_bigendian_mult</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_halfword_bigendian_mult">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_intel_halfword_variable"></a><span class="summary-sig-name">s_binary_block_size_intel_halfword_variable</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_intel_halfword_variable">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_intel_halfword_mult"></a><span class="summary-sig-name">s_binary_block_size_intel_halfword_mult</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_intel_halfword_mult">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_intel_halfword_plus"></a><span class="summary-sig-name">s_binary_block_size_intel_halfword_plus</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_intel_halfword_plus">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_halfword_bigendian"></a><span class="summary-sig-name">s_binary_block_size_halfword_bigendian</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_halfword_bigendian">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_word_intel_mult_plus"></a><span class="summary-sig-name">s_binary_block_size_word_intel_mult_plus</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_word_intel_mult_plus">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_intel_word_variable"></a><span class="summary-sig-name">s_binary_block_size_intel_word_variable</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_intel_word_variable">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_word_bigendian_mult"></a><span class="summary-sig-name">s_binary_block_size_word_bigendian_mult</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_word_bigendian_mult">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_blocksize_unsigned_string_variable"></a><span class="summary-sig-name">s_blocksize_unsigned_string_variable</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_blocksize_unsigned_string_variable">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_intel_word_plus"></a><span class="summary-sig-name">s_binary_block_size_intel_word_plus</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_intel_word_plus">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_intel_halfword"></a><span class="summary-sig-name">s_binary_block_size_intel_halfword</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_intel_halfword">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_word_bigendian"></a><span class="summary-sig-name">s_binary_block_size_word_bigendian</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_word_bigendian">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_blocksize_signed_string_variable"></a><span class="summary-sig-name">s_blocksize_signed_string_variable</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_blocksize_signed_string_variable">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_byte_variable"></a><span class="summary-sig-name">s_binary_block_size_byte_variable</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_byte_variable">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_intel_word"></a><span class="summary-sig-name">s_binary_block_size_intel_word</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_intel_word">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_byte_plus"></a><span class="summary-sig-name">s_binary_block_size_byte_plus</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_byte_plus">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_byte_mult"></a><span class="summary-sig-name">s_binary_block_size_byte_mult</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_byte_mult">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_blocksize_asciihex_variable"></a><span class="summary-sig-name">s_blocksize_asciihex_variable</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_blocksize_asciihex_variable">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_binary_block_size_byte"></a><span class="summary-sig-name">s_binary_block_size_byte</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_binary_block_size_byte">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_blocksize_asciihex"></a><span class="summary-sig-name">s_blocksize_asciihex</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_blocksize_asciihex">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="s_blocksize_string"></a><span class="summary-sig-name">s_blocksize_string</span>(<span class="summary-sig-arg">x</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_blocksize_string">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">String</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sulley-module.html#s_hex_dump" class="summary-sig-name">s_hex_dump</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">addr</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Return the hex dump of the supplied data starting at the offset 
+      address specified.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="sulley-pysrc.html#s_hex_dump">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Variables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="BIG_ENDIAN"></a><span class="summary-name">BIG_ENDIAN</span> = <code title="'&gt;'"><code class="variable-quote">'</code><code class="variable-string">&gt;</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="LITTLE_ENDIAN"></a><span class="summary-name">LITTLE_ENDIAN</span> = <code title="'&lt;'"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="'sulley'"><code class="variable-quote">'</code><code class="variable-string">sulley</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Function Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-FunctionDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="s_get"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_get</span>(<span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_get">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return the request with the specified name or the current request if 
+  name is not specified. Use this to switch from global function style 
+  request manipulation to direct object manipulation. Example:</p>
+<pre class="literalblock">
+   req = s_get(&quot;HTTP BASIC&quot;)
+   print req.num_mutations()
+</pre>
+  <p>The selected request is also set as the default current. (ie: 
+  s_switch(name) is implied).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Name of request to return or current request
+          if name is None.</li>
+    </ul></dd>
+    <dt>Returns: blocks.request</dt>
+        <dd>The requested request.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="s_initialize"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_initialize</span>(<span class="sig-arg">name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_initialize">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Initialize a new block request. All blocks / primitives generated 
+  after this call apply to the named request. Use s_switch() to jump 
+  between factories.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>name</code></strong> (String) - Name of request</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="s_mutate"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_mutate</span>()</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_mutate">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Mutate the current request and return False if mutations are 
+  exhausted, in which case the request has been reverted back to its normal
+  form.</p>
+  <dl class="fields">
+    <dt>Returns: Boolean</dt>
+        <dd>True on mutation success, False if mutations exhausted.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="s_num_mutations"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_num_mutations</span>()</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_num_mutations">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Determine the number of repetitions we will be making.</p>
+  <dl class="fields">
+    <dt>Returns: Integer</dt>
+        <dd>Number of mutated forms this primitive can take.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="s_render"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_render</span>()</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_render">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Render out and return the entire contents of the current request.</p>
+  <dl class="fields">
+    <dt>Returns: Raw</dt>
+        <dd>Rendered contents</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="s_switch"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_switch</span>(<span class="sig-arg">name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_switch">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Change the currect request to the one specified by 
+  &quot;name&quot;.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>name</code></strong> (String) - Name of request</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="s_block_start"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_block_start</span>(<span class="sig-arg">name</span>,
+        <span class="sig-arg">group</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">encoder</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">dep</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">dep_value</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">dep_values</span>=<span class="sig-default"><code class="variable-group">[</code><code class="variable-group">]</code></span>,
+        <span class="sig-arg">dep_compare</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">==</code><code class="variable-quote">'</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_block_start">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Open a new block under the current request. This routine always 
+  returns True so you can make your fuzzer pretty with indenting:</p>
+<pre class="literalblock">
+   if s_block_start(&quot;header&quot;):
+       s_static(&quot;\x00\x01&quot;)
+       if s_block_start(&quot;body&quot;):
+           ...
+</pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>name</code></strong> (String) - Name of block being opened</li>
+        <li><strong class="pname"><code>group</code></strong> (String) - (Optional, def=None) Name of group to associate this block with</li>
+        <li><strong class="pname"><code>encoder</code></strong> (Function Pointer) - (Optional, def=None) Optional pointer to a function to pass 
+          rendered data to prior to return</li>
+        <li><strong class="pname"><code>dep</code></strong> (String) - (Optional, def=None) Optional primitive whose specific value this
+          block is dependant on</li>
+        <li><strong class="pname"><code>dep_value</code></strong> (Mixed) - (Optional, def=None) Value that field &quot;dep&quot; must 
+          contain for block to be rendered</li>
+        <li><strong class="pname"><code>dep_values</code></strong> (List of Mixed Types) - (Optional, def=[]) Values that field &quot;dep&quot; may contain 
+          for block to be rendered</li>
+        <li><strong class="pname"><code>dep_compare</code></strong> (String) - (Optional, def=&quot;==&quot;) Comparison method to use on 
+          dependency (==, !=, &gt;, &gt;=, &lt;, &lt;=)</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="s_block_end"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_block_end</span>(<span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_block_end">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Close the last opened block. Optionally specify the name of the block 
+  being closed (purely for aesthetic purposes).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Name of block to closed.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="s_checksum"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_checksum</span>(<span class="sig-arg">block_name</span>,
+        <span class="sig-arg">algorithm</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">crc32</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">length</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">endian</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_checksum">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create a checksum block bound to the block with the specified name. 
+  You *can not* create a checksum for any currently open blocks.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>block_name</code></strong> (String) - Name of block to apply sizer to</li>
+        <li><strong class="pname"><code>algorithm</code></strong> (String) - (Optional, def=crc32) Checksum algorithm to use. (crc32, adler32,
+          md5, sha1)</li>
+        <li><strong class="pname"><code>length</code></strong> (Integer) - (Optional, def=0) Length of checksum, specify 0 to auto-calculate</li>
+        <li><strong class="pname"><code>endian</code></strong> (Character) - (Optional, def=LITTLE_ENDIAN) Endianess of the bit field 
+          (LITTLE_ENDIAN: &lt;, BIG_ENDIAN: &gt;)</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - Name of this checksum field</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="s_repeat"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_repeat</span>(<span class="sig-arg">block_name</span>,
+        <span class="sig-arg">min_reps</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">max_reps</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">step</span>=<span class="sig-default">1</span>,
+        <span class="sig-arg">variable</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_repeat">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Repeat the rendered contents of the specified block cycling from 
+  min_reps to max_reps counting by step. By default renders to nothing. 
+  This block modifier is useful for fuzzing overflows in table entries. 
+  This block modifier MUST come after the block it is being applied to.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>block_name</code></strong> (String) - Name of block to apply sizer to</li>
+        <li><strong class="pname"><code>min_reps</code></strong> (Integer) - (Optional, def=0) Minimum number of block repetitions</li>
+        <li><strong class="pname"><code>max_reps</code></strong> (Integer) - (Optional, def=None) Maximum number of block repetitions</li>
+        <li><strong class="pname"><code>step</code></strong> (Integer) - (Optional, def=1) Step count between min and max reps</li>
+        <li><strong class="pname"><code>variable</code></strong> (Sulley Integer Primitive) - (Optional, def=None) An integer primitive which will specify the 
+          number of repitions</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=True) Enable/disable fuzzing of this primitive</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_repeater()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_size"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_size</span>(<span class="sig-arg">block_name</span>,
+        <span class="sig-arg">offset</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">length</span>=<span class="sig-default">4</span>,
+        <span class="sig-arg">endian</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">format</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">inclusive</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">signed</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">math</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_size">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create a sizer block bound to the block with the specified name. You 
+  *can not* create a sizer for any currently open blocks.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>block_name</code></strong> (String) - Name of block to apply sizer to</li>
+        <li><strong class="pname"><code>offset</code></strong> (Integer) - (Optional, def=0) Offset to calculated size of block</li>
+        <li><strong class="pname"><code>length</code></strong> (Integer) - (Optional, def=4) Length of sizer</li>
+        <li><strong class="pname"><code>endian</code></strong> (Character) - (Optional, def=LITTLE_ENDIAN) Endianess of the bit field 
+          (LITTLE_ENDIAN: &lt;, BIG_ENDIAN: &gt;)</li>
+        <li><strong class="pname"><code>format</code></strong> (String) - (Optional, def=binary) Output format, &quot;binary&quot; or 
+          &quot;ascii&quot;</li>
+        <li><strong class="pname"><code>inclusive</code></strong> (Boolean) - (Optional, def=False) Should the sizer count its own length?</li>
+        <li><strong class="pname"><code>signed</code></strong> (Boolean) - (Optional, def=False) Make size signed vs. unsigned (applicable 
+          only with format=&quot;ascii&quot;)</li>
+        <li><strong class="pname"><code>math</code></strong> (Function) - (Optional, def=None) Apply the mathematical operations defined in
+          this function to the size</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=False) Enable/disable fuzzing of this sizer</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - Name of this sizer field</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_sizer()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_update"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_update</span>(<span class="sig-arg">name</span>,
+        <span class="sig-arg">value</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_update">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Update the value of the named primitive in the currently open 
+  request.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>name</code></strong> (String) - Name of object whose value we wish to update</li>
+        <li><strong class="pname"><code>value</code></strong> (Mixed) - Updated value</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="s_binary"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_binary</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_binary">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Parse a variable format binary string into a static value and push it 
+  onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (String) - Variable format binary string</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="s_delim"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_delim</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_delim">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a delimiter onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (Character) - Original value</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=True) Enable/disable fuzzing of this primitive</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="s_group"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_group</span>(<span class="sig-arg">name</span>,
+        <span class="sig-arg">values</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_group">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This primitive represents a list of static values, stepping through 
+  each one on mutation. You can tie a block to a group primitive to specify
+  that the block should cycle through all possible mutations for *each* 
+  value within the group. The group primitive is useful for example for 
+  representing a list of valid opcodes.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>name</code></strong> (String) - Name of group</li>
+        <li><strong class="pname"><code>values</code></strong> (List or raw data) - List of possible raw values this group can take.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="s_lego"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_lego</span>(<span class="sig-arg">lego_type</span>,
+        <span class="sig-arg">value</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">options</span>=<span class="sig-default"><code class="variable-group">{</code><code class="variable-group">}</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_lego">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Legos are pre-built blocks... TODO: finish this doc</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="s_random"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_random</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">min_length</span>,
+        <span class="sig-arg">max_length</span>,
+        <span class="sig-arg">num_mutations</span>=<span class="sig-default">25</span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">step</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_random">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Generate a random chunk of data while maintaining a copy of the 
+  original. A random length range can be specified. For a static length, 
+  set min/max length to be the same.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (Raw) - Original value</li>
+        <li><strong class="pname"><code>min_length</code></strong> (Integer) - Minimum length of random block</li>
+        <li><strong class="pname"><code>max_length</code></strong> (Integer) - Maximum length of random block</li>
+        <li><strong class="pname"><code>num_mutations</code></strong> (Integer) - (Optional, def=25) Number of mutations to make before reverting 
+          to default</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=True) Enable/disable fuzzing of this primitive</li>
+        <li><strong class="pname"><code>step</code></strong> (Integer) - (Optional, def=None) If not null, step count between min and max 
+          reps, otherwise random</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="s_static"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_static</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_static">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a static value onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (Raw) - Raw static data</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_dunno(), s_raw(), s_unknown()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_string"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_string</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">size</span>=<span class="sig-default">-1</span>,
+        <span class="sig-arg">padding</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">\x00</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">encoding</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">ascii</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">max_len</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_string">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a string onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (String) - Default string value</li>
+        <li><strong class="pname"><code>size</code></strong> (Integer) - (Optional, def=-1) Static size of this field, leave -1 for 
+          dynamic.</li>
+        <li><strong class="pname"><code>padding</code></strong> (Character) - (Optional, def=&quot;\x00&quot;) Value to use as padding to fill 
+          static field size.</li>
+        <li><strong class="pname"><code>encoding</code></strong> (String) - (Optonal, def=&quot;ascii&quot;) String encoding, ex: utf_16_le 
+          for Microsoft Unicode.</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=True) Enable/disable fuzzing of this primitive</li>
+        <li><strong class="pname"><code>max_len</code></strong> (Integer) - (Optional, def=0) Maximum string length</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="s_bit_field"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_bit_field</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">width</span>,
+        <span class="sig-arg">endian</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">format</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">signed</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">full_range</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_bit_field">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a variable length bit field onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (Integer) - Default integer value</li>
+        <li><strong class="pname"><code>width</code></strong> (Integer) - Width of bit fields</li>
+        <li><strong class="pname"><code>endian</code></strong> (Character) - (Optional, def=LITTLE_ENDIAN) Endianess of the bit field 
+          (LITTLE_ENDIAN: &lt;, BIG_ENDIAN: &gt;)</li>
+        <li><strong class="pname"><code>format</code></strong> (String) - (Optional, def=binary) Output format, &quot;binary&quot; or 
+          &quot;ascii&quot;</li>
+        <li><strong class="pname"><code>signed</code></strong> (Boolean) - (Optional, def=False) Make size signed vs. unsigned (applicable 
+          only with format=&quot;ascii&quot;)</li>
+        <li><strong class="pname"><code>full_range</code></strong> (Boolean) - (Optional, def=False) If enabled the field mutates through *all* 
+          possible values.</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=True) Enable/disable fuzzing of this primitive</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_bit(), s_bits()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_byte"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_byte</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">endian</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">format</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">signed</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">full_range</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_byte">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a byte onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (Integer) - Default integer value</li>
+        <li><strong class="pname"><code>endian</code></strong> (Character) - (Optional, def=LITTLE_ENDIAN) Endianess of the bit field 
+          (LITTLE_ENDIAN: &lt;, BIG_ENDIAN: &gt;)</li>
+        <li><strong class="pname"><code>format</code></strong> (String) - (Optional, def=binary) Output format, &quot;binary&quot; or 
+          &quot;ascii&quot;</li>
+        <li><strong class="pname"><code>signed</code></strong> (Boolean) - (Optional, def=False) Make size signed vs. unsigned (applicable 
+          only with format=&quot;ascii&quot;)</li>
+        <li><strong class="pname"><code>full_range</code></strong> (Boolean) - (Optional, def=False) If enabled the field mutates through *all* 
+          possible values.</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=True) Enable/disable fuzzing of this primitive</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_char()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_word"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_word</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">endian</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">format</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">signed</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">full_range</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_word">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a word onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (Integer) - Default integer value</li>
+        <li><strong class="pname"><code>endian</code></strong> (Character) - (Optional, def=LITTLE_ENDIAN) Endianess of the bit field 
+          (LITTLE_ENDIAN: &lt;, BIG_ENDIAN: &gt;)</li>
+        <li><strong class="pname"><code>format</code></strong> (String) - (Optional, def=binary) Output format, &quot;binary&quot; or 
+          &quot;ascii&quot;</li>
+        <li><strong class="pname"><code>signed</code></strong> (Boolean) - (Optional, def=False) Make size signed vs. unsigned (applicable 
+          only with format=&quot;ascii&quot;)</li>
+        <li><strong class="pname"><code>full_range</code></strong> (Boolean) - (Optional, def=False) If enabled the field mutates through *all* 
+          possible values.</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=True) Enable/disable fuzzing of this primitive</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_short()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_dword"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_dword</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">endian</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">format</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">signed</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">full_range</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_dword">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a double word onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (Integer) - Default integer value</li>
+        <li><strong class="pname"><code>endian</code></strong> (Character) - (Optional, def=LITTLE_ENDIAN) Endianess of the bit field 
+          (LITTLE_ENDIAN: &lt;, BIG_ENDIAN: &gt;)</li>
+        <li><strong class="pname"><code>format</code></strong> (String) - (Optional, def=binary) Output format, &quot;binary&quot; or 
+          &quot;ascii&quot;</li>
+        <li><strong class="pname"><code>signed</code></strong> (Boolean) - (Optional, def=False) Make size signed vs. unsigned (applicable 
+          only with format=&quot;ascii&quot;)</li>
+        <li><strong class="pname"><code>full_range</code></strong> (Boolean) - (Optional, def=False) If enabled the field mutates through *all* 
+          possible values.</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=True) Enable/disable fuzzing of this primitive</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_long(), s_int()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_qword"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_qword</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">endian</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">format</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">signed</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">full_range</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_qword">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a quad word onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (Integer) - Default integer value</li>
+        <li><strong class="pname"><code>endian</code></strong> (Character) - (Optional, def=LITTLE_ENDIAN) Endianess of the bit field 
+          (LITTLE_ENDIAN: &lt;, BIG_ENDIAN: &gt;)</li>
+        <li><strong class="pname"><code>format</code></strong> (String) - (Optional, def=binary) Output format, &quot;binary&quot; or 
+          &quot;ascii&quot;</li>
+        <li><strong class="pname"><code>signed</code></strong> (Boolean) - (Optional, def=False) Make size signed vs. unsigned (applicable 
+          only with format=&quot;ascii&quot;)</li>
+        <li><strong class="pname"><code>full_range</code></strong> (Boolean) - (Optional, def=False) If enabled the field mutates through *all* 
+          possible values.</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=True) Enable/disable fuzzing of this primitive</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_double()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_unknown"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_unknown</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_static">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a static value onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (Raw) - Raw static data</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_dunno(), s_raw(), s_unknown()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_raw"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_raw</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_static">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a static value onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (Raw) - Raw static data</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_dunno(), s_raw(), s_unknown()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_dunno"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_dunno</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_static">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a static value onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (Raw) - Raw static data</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_dunno(), s_raw(), s_unknown()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_sizer"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_sizer</span>(<span class="sig-arg">block_name</span>,
+        <span class="sig-arg">offset</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">length</span>=<span class="sig-default">4</span>,
+        <span class="sig-arg">endian</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">format</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">inclusive</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">signed</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">math</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_size">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create a sizer block bound to the block with the specified name. You 
+  *can not* create a sizer for any currently open blocks.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>block_name</code></strong> (String) - Name of block to apply sizer to</li>
+        <li><strong class="pname"><code>offset</code></strong> (Integer) - (Optional, def=0) Offset to calculated size of block</li>
+        <li><strong class="pname"><code>length</code></strong> (Integer) - (Optional, def=4) Length of sizer</li>
+        <li><strong class="pname"><code>endian</code></strong> (Character) - (Optional, def=LITTLE_ENDIAN) Endianess of the bit field 
+          (LITTLE_ENDIAN: &lt;, BIG_ENDIAN: &gt;)</li>
+        <li><strong class="pname"><code>format</code></strong> (String) - (Optional, def=binary) Output format, &quot;binary&quot; or 
+          &quot;ascii&quot;</li>
+        <li><strong class="pname"><code>inclusive</code></strong> (Boolean) - (Optional, def=False) Should the sizer count its own length?</li>
+        <li><strong class="pname"><code>signed</code></strong> (Boolean) - (Optional, def=False) Make size signed vs. unsigned (applicable 
+          only with format=&quot;ascii&quot;)</li>
+        <li><strong class="pname"><code>math</code></strong> (Function) - (Optional, def=None) Apply the mathematical operations defined in
+          this function to the size</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=False) Enable/disable fuzzing of this sizer</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - Name of this sizer field</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_sizer()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_bits"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_bits</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">width</span>,
+        <span class="sig-arg">endian</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">format</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">signed</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">full_range</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_bit_field">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a variable length bit field onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (Integer) - Default integer value</li>
+        <li><strong class="pname"><code>width</code></strong> (Integer) - Width of bit fields</li>
+        <li><strong class="pname"><code>endian</code></strong> (Character) - (Optional, def=LITTLE_ENDIAN) Endianess of the bit field 
+          (LITTLE_ENDIAN: &lt;, BIG_ENDIAN: &gt;)</li>
+        <li><strong class="pname"><code>format</code></strong> (String) - (Optional, def=binary) Output format, &quot;binary&quot; or 
+          &quot;ascii&quot;</li>
+        <li><strong class="pname"><code>signed</code></strong> (Boolean) - (Optional, def=False) Make size signed vs. unsigned (applicable 
+          only with format=&quot;ascii&quot;)</li>
+        <li><strong class="pname"><code>full_range</code></strong> (Boolean) - (Optional, def=False) If enabled the field mutates through *all* 
+          possible values.</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=True) Enable/disable fuzzing of this primitive</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_bit(), s_bits()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_bit"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_bit</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">width</span>,
+        <span class="sig-arg">endian</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">format</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">signed</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">full_range</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_bit_field">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a variable length bit field onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (Integer) - Default integer value</li>
+        <li><strong class="pname"><code>width</code></strong> (Integer) - Width of bit fields</li>
+        <li><strong class="pname"><code>endian</code></strong> (Character) - (Optional, def=LITTLE_ENDIAN) Endianess of the bit field 
+          (LITTLE_ENDIAN: &lt;, BIG_ENDIAN: &gt;)</li>
+        <li><strong class="pname"><code>format</code></strong> (String) - (Optional, def=binary) Output format, &quot;binary&quot; or 
+          &quot;ascii&quot;</li>
+        <li><strong class="pname"><code>signed</code></strong> (Boolean) - (Optional, def=False) Make size signed vs. unsigned (applicable 
+          only with format=&quot;ascii&quot;)</li>
+        <li><strong class="pname"><code>full_range</code></strong> (Boolean) - (Optional, def=False) If enabled the field mutates through *all* 
+          possible values.</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=True) Enable/disable fuzzing of this primitive</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_bit(), s_bits()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_char"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_char</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">endian</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">format</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">signed</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">full_range</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_byte">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a byte onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (Integer) - Default integer value</li>
+        <li><strong class="pname"><code>endian</code></strong> (Character) - (Optional, def=LITTLE_ENDIAN) Endianess of the bit field 
+          (LITTLE_ENDIAN: &lt;, BIG_ENDIAN: &gt;)</li>
+        <li><strong class="pname"><code>format</code></strong> (String) - (Optional, def=binary) Output format, &quot;binary&quot; or 
+          &quot;ascii&quot;</li>
+        <li><strong class="pname"><code>signed</code></strong> (Boolean) - (Optional, def=False) Make size signed vs. unsigned (applicable 
+          only with format=&quot;ascii&quot;)</li>
+        <li><strong class="pname"><code>full_range</code></strong> (Boolean) - (Optional, def=False) If enabled the field mutates through *all* 
+          possible values.</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=True) Enable/disable fuzzing of this primitive</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_char()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_short"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_short</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">endian</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">format</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">signed</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">full_range</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_word">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a word onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (Integer) - Default integer value</li>
+        <li><strong class="pname"><code>endian</code></strong> (Character) - (Optional, def=LITTLE_ENDIAN) Endianess of the bit field 
+          (LITTLE_ENDIAN: &lt;, BIG_ENDIAN: &gt;)</li>
+        <li><strong class="pname"><code>format</code></strong> (String) - (Optional, def=binary) Output format, &quot;binary&quot; or 
+          &quot;ascii&quot;</li>
+        <li><strong class="pname"><code>signed</code></strong> (Boolean) - (Optional, def=False) Make size signed vs. unsigned (applicable 
+          only with format=&quot;ascii&quot;)</li>
+        <li><strong class="pname"><code>full_range</code></strong> (Boolean) - (Optional, def=False) If enabled the field mutates through *all* 
+          possible values.</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=True) Enable/disable fuzzing of this primitive</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_short()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_int"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_int</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">endian</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">format</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">signed</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">full_range</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_dword">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a double word onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (Integer) - Default integer value</li>
+        <li><strong class="pname"><code>endian</code></strong> (Character) - (Optional, def=LITTLE_ENDIAN) Endianess of the bit field 
+          (LITTLE_ENDIAN: &lt;, BIG_ENDIAN: &gt;)</li>
+        <li><strong class="pname"><code>format</code></strong> (String) - (Optional, def=binary) Output format, &quot;binary&quot; or 
+          &quot;ascii&quot;</li>
+        <li><strong class="pname"><code>signed</code></strong> (Boolean) - (Optional, def=False) Make size signed vs. unsigned (applicable 
+          only with format=&quot;ascii&quot;)</li>
+        <li><strong class="pname"><code>full_range</code></strong> (Boolean) - (Optional, def=False) If enabled the field mutates through *all* 
+          possible values.</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=True) Enable/disable fuzzing of this primitive</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_long(), s_int()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_long"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_long</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">endian</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">format</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">signed</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">full_range</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_dword">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a double word onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (Integer) - Default integer value</li>
+        <li><strong class="pname"><code>endian</code></strong> (Character) - (Optional, def=LITTLE_ENDIAN) Endianess of the bit field 
+          (LITTLE_ENDIAN: &lt;, BIG_ENDIAN: &gt;)</li>
+        <li><strong class="pname"><code>format</code></strong> (String) - (Optional, def=binary) Output format, &quot;binary&quot; or 
+          &quot;ascii&quot;</li>
+        <li><strong class="pname"><code>signed</code></strong> (Boolean) - (Optional, def=False) Make size signed vs. unsigned (applicable 
+          only with format=&quot;ascii&quot;)</li>
+        <li><strong class="pname"><code>full_range</code></strong> (Boolean) - (Optional, def=False) If enabled the field mutates through *all* 
+          possible values.</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=True) Enable/disable fuzzing of this primitive</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_long(), s_int()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_double"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_double</span>(<span class="sig-arg">value</span>,
+        <span class="sig-arg">endian</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">&lt;</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">format</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">binary</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">signed</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">full_range</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_qword">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Push a quad word onto the current block stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>value</code></strong> (Integer) - Default integer value</li>
+        <li><strong class="pname"><code>endian</code></strong> (Character) - (Optional, def=LITTLE_ENDIAN) Endianess of the bit field 
+          (LITTLE_ENDIAN: &lt;, BIG_ENDIAN: &gt;)</li>
+        <li><strong class="pname"><code>format</code></strong> (String) - (Optional, def=binary) Output format, &quot;binary&quot; or 
+          &quot;ascii&quot;</li>
+        <li><strong class="pname"><code>signed</code></strong> (Boolean) - (Optional, def=False) Make size signed vs. unsigned (applicable 
+          only with format=&quot;ascii&quot;)</li>
+        <li><strong class="pname"><code>full_range</code></strong> (Boolean) - (Optional, def=False) If enabled the field mutates through *all* 
+          possible values.</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=True) Enable/disable fuzzing of this primitive</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_double()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_repeater"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_repeater</span>(<span class="sig-arg">block_name</span>,
+        <span class="sig-arg">min_reps</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">max_reps</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">step</span>=<span class="sig-default">1</span>,
+        <span class="sig-arg">variable</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">fuzzable</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_repeat">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Repeat the rendered contents of the specified block cycling from 
+  min_reps to max_reps counting by step. By default renders to nothing. 
+  This block modifier is useful for fuzzing overflows in table entries. 
+  This block modifier MUST come after the block it is being applied to.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>block_name</code></strong> (String) - Name of block to apply sizer to</li>
+        <li><strong class="pname"><code>min_reps</code></strong> (Integer) - (Optional, def=0) Minimum number of block repetitions</li>
+        <li><strong class="pname"><code>max_reps</code></strong> (Integer) - (Optional, def=None) Maximum number of block repetitions</li>
+        <li><strong class="pname"><code>step</code></strong> (Integer) - (Optional, def=1) Step count between min and max reps</li>
+        <li><strong class="pname"><code>variable</code></strong> (Sulley Integer Primitive) - (Optional, def=None) An integer primitive which will specify the 
+          number of repitions</li>
+        <li><strong class="pname"><code>fuzzable</code></strong> (Boolean) - (Optional, def=True) Enable/disable fuzzing of this primitive</li>
+        <li><strong class="pname"><code>name</code></strong> (String) - (Optional, def=None) Specifying a name gives you direct access to
+          a primitive</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>See Also:</strong>
+        Aliases: s_repeater()
+      </p>
+</div></td></tr></table>
+</div>
+<a name="s_hex_dump"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">s_hex_dump</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">addr</span>=<span class="sig-default">0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="sulley-pysrc.html#s_hex_dump">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return the hex dump of the supplied data starting at the offset 
+  address specified.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>data</code></strong> (Raw) - Data to show hex dump of</li>
+        <li><strong class="pname"><code>addr</code></strong> (Integer) - (Optional, def=0) Offset to start displaying hex dump addresses 
+          from</li>
+    </ul></dd>
+    <dt>Returns: String</dt>
+        <dd>Hex dump of raw data</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pedram.openrce.org">Sulley: Fuzzing Framework</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Wed Oct 19 23:24:35 2016
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

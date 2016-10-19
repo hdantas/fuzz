@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>sulley.legos.xdr</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="sulley-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pedram.openrce.org">Sulley: Fuzzing Framework</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="sulley-module.html">Package&nbsp;sulley</a> ::
+        <a href="sulley.legos-module.html">Package&nbsp;legos</a> ::
+        Module&nbsp;xdr
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="sulley.legos.xdr-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="sulley.legos.xdr-module.html">Module sulley.legos.xdr</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-comment">########################################################################################################################</tt> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-comment">### XDR TYPES (http://www.freesoft.org/CIE/RFC/1832/index.htm)</tt> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"><tt class="py-comment">########################################################################################################################</tt> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">struct</tt> </tt>
+<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-0" class="py-name" targets="Package sulley=sulley-module.html"><a title="sulley" class="py-name" href="#" onclick="return doclink('link-0', 'sulley', 'link-0');">sulley</a></tt> <tt class="py-keyword">import</tt> <tt id="link-1" class="py-name" targets="Module sulley.blocks=sulley.blocks-module.html"><a title="sulley.blocks" class="py-name" href="#" onclick="return doclink('link-1', 'blocks', 'link-1');">blocks</a></tt><tt class="py-op">,</tt> <tt id="link-2" class="py-name" targets="Module sulley.primitives=sulley.primitives-module.html"><a title="sulley.primitives" class="py-name" href="#" onclick="return doclink('link-2', 'primitives', 'link-2');">primitives</a></tt><tt class="py-op">,</tt> <tt id="link-3" class="py-name" targets="Module sulley.sex=sulley.sex-module.html"><a title="sulley.sex" class="py-name" href="#" onclick="return doclink('link-3', 'sex', 'link-3');">sex</a></tt> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-comment">########################################################################################################################</tt> </tt>
+<a name="xdr_pad"></a><div id="xdr_pad-def"><a name="L10"></a><tt class="py-lineno">10</tt> <a class="py-toggle" href="#" id="xdr_pad-toggle" onclick="return toggle('xdr_pad');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="sulley.legos.xdr-module.html#xdr_pad">xdr_pad</a> <tt class="py-op">(</tt><tt class="py-param">string</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="xdr_pad-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="xdr_pad-expanded"><a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-string">"\x00"</tt> <tt class="py-op">*</tt> <tt class="py-op">(</tt><tt class="py-op">(</tt><tt class="py-number">4</tt> <tt class="py-op">-</tt> <tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt id="link-4" class="py-name" targets="Class sulley.legos.ber.string=sulley.legos.ber.string-class.html,Class sulley.legos.xdr.string=sulley.legos.xdr.string-class.html,Class sulley.primitives.string=sulley.primitives.string-class.html"><a title="sulley.legos.ber.string
+sulley.legos.xdr.string
+sulley.primitives.string" class="py-name" href="#" onclick="return doclink('link-4', 'string', 'link-4');">string</a></tt><tt class="py-op">)</tt> <tt class="py-op">&amp;</tt> <tt class="py-number">3</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">&amp;</tt> <tt class="py-number">3</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"> </tt>
+<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line"> </tt>
+<a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line"><tt class="py-comment">########################################################################################################################</tt> </tt>
+<a name="string"></a><div id="string-def"><a name="L15"></a><tt class="py-lineno">15</tt> <a class="py-toggle" href="#" id="string-toggle" onclick="return toggle('string');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="sulley.legos.xdr.string-class.html">string</a> <tt class="py-op">(</tt><tt class="py-base-class">blocks</tt><tt class="py-op">.</tt><tt class="py-base-class">block</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="string-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="string-expanded"><a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line">    <tt class="py-docstring">'''</tt> </tt>
+<a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line"><tt class="py-docstring">    Note: this is not for fuzzing the XDR protocol but rather just representing an XDR string for fuzzing the actual</tt> </tt>
+<a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line"><tt class="py-docstring">    client.</tt> </tt>
+<a name="L19"></a><tt class="py-lineno">19</tt>  <tt class="py-line"><tt class="py-docstring">    '''</tt> </tt>
+<a name="L20"></a><tt class="py-lineno">20</tt>  <tt class="py-line"> </tt>
+<a name="string.__init__"></a><div id="string.__init__-def"><a name="L21"></a><tt class="py-lineno">21</tt> <a class="py-toggle" href="#" id="string.__init__-toggle" onclick="return toggle('string.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="sulley.legos.xdr.string-class.html#__init__">__init__</a> <tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">name</tt><tt class="py-op">,</tt> <tt class="py-param">request</tt><tt class="py-op">,</tt> <tt class="py-param">value</tt><tt class="py-op">,</tt> <tt class="py-param">options</tt><tt class="py-op">=</tt><tt class="py-op">{</tt><tt class="py-op">}</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="string.__init__-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="string.__init__-expanded"><a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line">        <tt id="link-5" class="py-name"><a title="sulley.blocks" class="py-name" href="#" onclick="return doclink('link-5', 'blocks', 'link-1');">blocks</a></tt><tt class="py-op">.</tt><tt id="link-6" class="py-name" targets="Class sulley.blocks.block=sulley.blocks.block-class.html"><a title="sulley.blocks.block" class="py-name" href="#" onclick="return doclink('link-6', 'block', 'link-6');">block</a></tt><tt class="py-op">.</tt><tt id="link-7" class="py-name" targets="Method sulley.blocks.block.__init__()=sulley.blocks.block-class.html#__init__,Method sulley.blocks.checksum.__init__()=sulley.blocks.checksum-class.html#__init__,Method sulley.blocks.repeat.__init__()=sulley.blocks.repeat-class.html#__init__,Method sulley.blocks.request.__init__()=sulley.blocks.request-class.html#__init__,Method sulley.blocks.size.__init__()=sulley.blocks.size-class.html#__init__,Method sulley.instrumentation.external.__init__()=sulley.instrumentation.external-class.html#__init__,Method sulley.legos.ber.integer.__init__()=sulley.legos.ber.integer-class.html#__init__,Method sulley.legos.ber.string.__init__()=sulley.legos.ber.string-class.html#__init__,Method sulley.legos.dcerpc.ndr_conformant_array.__init__()=sulley.legos.dcerpc.ndr_conformant_array-class.html#__init__,Method sulley.legos.dcerpc.ndr_string.__init__()=sulley.legos.dcerpc.ndr_string-class.html#__init__,Method sulley.legos.dcerpc.ndr_wstring.__init__()=sulley.legos.dcerpc.ndr_wstring-class.html#__init__,Method sulley.legos.misc.dns_hostname.__init__()=sulley.legos.misc.dns_hostname-class.html#__init__,Method sulley.legos.misc.tag.__init__()=sulley.legos.misc.tag-class.html#__init__,Method sulley.legos.xdr.string.__init__()=sulley.legos.xdr.string-class.html#__init__,Method sulley.pedrpc.client.__init__()=sulley.pedrpc.client-class.html#__init__,Method sulley.pedrpc.server.__init__()=sulley.pedrpc.server-class.html#__init__,Method sulley.pgraph.cluster.cluster.__init__()=sulley.pgraph.cluster.cluster-class.html#__init__,Method sulley.pgraph.edge.edge.__init__()=sulley.pgraph.edge.edge-class.html#__init__,Method sulley.pgraph.graph'.graph.__init__()=sulley.pgraph.graph%27.graph-class.html#__init__,Method sulley.pgraph.node'.node.__init__()=sulley.pgraph.node%27.node-class.html#__init__,Method sulley.primitives.base_primitive.__init__()=sulley.primitives.base_primitive-class.html#__init__,Method sulley.primitives.bit_field.__init__()=sulley.primitives.bit_field-class.html#__init__,Method sulley.primitives.byte.__init__()=sulley.primitives.byte-class.html#__init__,Method sulley.primitives.delim.__init__()=sulley.primitives.delim-class.html#__init__,Method sulley.primitives.dword.__init__()=sulley.primitives.dword-class.html#__init__,Method sulley.primitives.group.__init__()=sulley.primitives.group-class.html#__init__,Method sulley.primitives.qword.__init__()=sulley.primitives.qword-class.html#__init__,Method sulley.primitives.random_data.__init__()=sulley.primitives.random_data-class.html#__init__,Method sulley.primitives.static.__init__()=sulley.primitives.static-class.html#__init__,Method sulley.primitives.string.__init__()=sulley.primitives.string-class.html#__init__,Method sulley.primitives.word.__init__()=sulley.primitives.word-class.html#__init__,Method sulley.sessions.connection.__init__()=sulley.sessions.connection-class.html#__init__,Method sulley.sessions.session.__init__()=sulley.sessions.session-class.html#__init__,Method sulley.sessions.target.__init__()=sulley.sessions.target-class.html#__init__,Method sulley.sessions.web_interface_handler.__init__()=sulley.sessions.web_interface_handler-class.html#__init__,Method sulley.sessions.web_interface_server.__init__()=sulley.sessions.web_interface_server-class.html#__init__,Method sulley.sessions.web_interface_thread.__init__()=sulley.sessions.web_interface_thread-class.html#__init__,Method sulley.utils.crc16.CRC16.__init__()=sulley.utils.crc16.CRC16-class.html#__init__"><a title="sulley.blocks.block.__init__
+sulley.blocks.checksum.__init__
+sulley.blocks.repeat.__init__
+sulley.blocks.request.__init__
+sulley.blocks.size.__init__
+sulley.instrumentation.external.__init__
+sulley.legos.ber.integer.__init__
+sulley.legos.ber.string.__init__
+sulley.legos.dcerpc.ndr_conformant_array.__init__
+sulley.legos.dcerpc.ndr_string.__init__
+sulley.legos.dcerpc.ndr_wstring.__init__
+sulley.legos.misc.dns_hostname.__init__
+sulley.legos.misc.tag.__init__
+sulley.legos.xdr.string.__init__
+sulley.pedrpc.client.__init__
+sulley.pedrpc.server.__init__
+sulley.pgraph.cluster.cluster.__init__
+sulley.pgraph.edge.edge.__init__
+sulley.pgraph.graph'.graph.__init__
+sulley.pgraph.node'.node.__init__
+sulley.primitives.base_primitive.__init__
+sulley.primitives.bit_field.__init__
+sulley.primitives.byte.__init__
+sulley.primitives.delim.__init__
+sulley.primitives.dword.__init__
+sulley.primitives.group.__init__
+sulley.primitives.qword.__init__
+sulley.primitives.random_data.__init__
+sulley.primitives.static.__init__
+sulley.primitives.string.__init__
+sulley.primitives.word.__init__
+sulley.sessions.connection.__init__
+sulley.sessions.session.__init__
+sulley.sessions.target.__init__
+sulley.sessions.web_interface_handler.__init__
+sulley.sessions.web_interface_server.__init__
+sulley.sessions.web_interface_thread.__init__
+sulley.utils.crc16.CRC16.__init__" class="py-name" href="#" onclick="return doclink('link-7', '__init__', 'link-7');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">name</tt><tt class="py-op">,</tt> <tt id="link-8" class="py-name" targets="Class sulley.blocks.request=sulley.blocks.request-class.html,Function sulley.utils.dcerpc.request()=sulley.utils.dcerpc-module.html#request"><a title="sulley.blocks.request
+sulley.utils.dcerpc.request" class="py-name" href="#" onclick="return doclink('link-8', 'request', 'link-8');">request</a></tt><tt class="py-op">,</tt> <tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt> </tt>
+<a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line"> </tt>
+<a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">value</tt>   <tt class="py-op">=</tt> <tt class="py-name">value</tt> </tt>
+<a name="L25"></a><tt class="py-lineno">25</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">options</tt> <tt class="py-op">=</tt> <tt class="py-name">options</tt> </tt>
+<a name="L26"></a><tt class="py-lineno">26</tt>  <tt class="py-line"> </tt>
+<a name="L27"></a><tt class="py-lineno">27</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">value</tt><tt class="py-op">:</tt> </tt>
+<a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line">            <tt class="py-keyword">raise</tt> <tt id="link-9" class="py-name"><a title="sulley.sex" class="py-name" href="#" onclick="return doclink('link-9', 'sex', 'link-3');">sex</a></tt><tt class="py-op">.</tt><tt id="link-10" class="py-name" targets="Class sulley.sex.SullyRuntimeError=sulley.sex.SullyRuntimeError-class.html"><a title="sulley.sex.SullyRuntimeError" class="py-name" href="#" onclick="return doclink('link-10', 'SullyRuntimeError', 'link-10');">SullyRuntimeError</a></tt><tt class="py-op">(</tt><tt class="py-string">"MISSING LEGO.xdr_string DEFAULT VALUE"</tt><tt class="py-op">)</tt> </tt>
+<a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line"> </tt>
+<a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-11" class="py-name" targets="Method sulley.blocks.block.push()=sulley.blocks.block-class.html#push,Method sulley.blocks.request.push()=sulley.blocks.request-class.html#push"><a title="sulley.blocks.block.push
+sulley.blocks.request.push" class="py-name" href="#" onclick="return doclink('link-11', 'push', 'link-11');">push</a></tt><tt class="py-op">(</tt><tt id="link-12" class="py-name"><a title="sulley.primitives" class="py-name" href="#" onclick="return doclink('link-12', 'primitives', 'link-2');">primitives</a></tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="sulley.legos.ber.string
+sulley.legos.xdr.string
+sulley.primitives.string" class="py-name" href="#" onclick="return doclink('link-13', 'string', 'link-4');">string</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">value</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line"> </tt>
+<a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line"> </tt>
+<a name="string.render"></a><div id="string.render-def"><a name="L33"></a><tt class="py-lineno">33</tt> <a class="py-toggle" href="#" id="string.render-toggle" onclick="return toggle('string.render');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="sulley.legos.xdr.string-class.html#render">render</a> <tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="string.render-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="string.render-expanded"><a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line">        <tt class="py-docstring">'''</tt> </tt>
+<a name="L35"></a><tt class="py-lineno">35</tt>  <tt class="py-line"><tt class="py-docstring">        We overload and extend the render routine in order to properly pad and prefix the string.</tt> </tt>
+<a name="L36"></a><tt class="py-lineno">36</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line"><tt class="py-docstring">        [dword length][array][pad]</tt> </tt>
+<a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line"><tt class="py-docstring">        '''</tt> </tt>
+<a name="L39"></a><tt class="py-lineno">39</tt>  <tt class="py-line"> </tt>
+<a name="L40"></a><tt class="py-lineno">40</tt>  <tt class="py-line">        <tt class="py-comment"># let the parent do the initial render.</tt> </tt>
+<a name="L41"></a><tt class="py-lineno">41</tt>  <tt class="py-line">        <tt id="link-14" class="py-name"><a title="sulley.blocks" class="py-name" href="#" onclick="return doclink('link-14', 'blocks', 'link-1');">blocks</a></tt><tt class="py-op">.</tt><tt id="link-15" class="py-name"><a title="sulley.blocks.block" class="py-name" href="#" onclick="return doclink('link-15', 'block', 'link-6');">block</a></tt><tt class="py-op">.</tt><tt id="link-16" class="py-name" targets="Method sulley.blocks.block.render()=sulley.blocks.block-class.html#render,Method sulley.blocks.checksum.render()=sulley.blocks.checksum-class.html#render,Method sulley.blocks.repeat.render()=sulley.blocks.repeat-class.html#render,Method sulley.blocks.request.render()=sulley.blocks.request-class.html#render,Method sulley.blocks.size.render()=sulley.blocks.size-class.html#render,Method sulley.legos.ber.integer.render()=sulley.legos.ber.integer-class.html#render,Method sulley.legos.ber.string.render()=sulley.legos.ber.string-class.html#render,Method sulley.legos.dcerpc.ndr_conformant_array.render()=sulley.legos.dcerpc.ndr_conformant_array-class.html#render,Method sulley.legos.dcerpc.ndr_string.render()=sulley.legos.dcerpc.ndr_string-class.html#render,Method sulley.legos.dcerpc.ndr_wstring.render()=sulley.legos.dcerpc.ndr_wstring-class.html#render,Method sulley.legos.misc.dns_hostname.render()=sulley.legos.misc.dns_hostname-class.html#render,Method sulley.legos.xdr.string.render()=sulley.legos.xdr.string-class.html#render,Method sulley.pgraph.cluster.cluster.render()=sulley.pgraph.cluster.cluster-class.html#render,Method sulley.primitives.base_primitive.render()=sulley.primitives.base_primitive-class.html#render,Method sulley.primitives.bit_field.render()=sulley.primitives.bit_field-class.html#render,Method sulley.primitives.string.render()=sulley.primitives.string-class.html#render"><a title="sulley.blocks.block.render
+sulley.blocks.checksum.render
+sulley.blocks.repeat.render
+sulley.blocks.request.render
+sulley.blocks.size.render
+sulley.legos.ber.integer.render
+sulley.legos.ber.string.render
+sulley.legos.dcerpc.ndr_conformant_array.render
+sulley.legos.dcerpc.ndr_string.render
+sulley.legos.dcerpc.ndr_wstring.render
+sulley.legos.misc.dns_hostname.render
+sulley.legos.xdr.string.render
+sulley.pgraph.cluster.cluster.render
+sulley.primitives.base_primitive.render
+sulley.primitives.bit_field.render
+sulley.primitives.string.render" class="py-name" href="#" onclick="return doclink('link-16', 'render', 'link-16');">render</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">)</tt> </tt>
+<a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line"> </tt>
+<a name="L43"></a><tt class="py-lineno">43</tt>  <tt class="py-line">        <tt class="py-comment"># encode the empty string correctly:</tt> </tt>
+<a name="L44"></a><tt class="py-lineno">44</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">rendered</tt> <tt class="py-op">==</tt> <tt class="py-string">""</tt><tt class="py-op">:</tt> </tt>
+<a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">rendered</tt> <tt class="py-op">=</tt> <tt class="py-string">"\x00\x00\x00\x00"</tt> </tt>
+<a name="L46"></a><tt class="py-lineno">46</tt>  <tt class="py-line">        <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">rendered</tt> <tt class="py-op">=</tt> <tt class="py-name">struct</tt><tt class="py-op">.</tt><tt class="py-name">pack</tt><tt class="py-op">(</tt><tt class="py-string">"&gt;L"</tt><tt class="py-op">,</tt> <tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">rendered</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">rendered</tt> <tt class="py-op">+</tt> <tt id="link-17" class="py-name" targets="Function sulley.legos.xdr.xdr_pad()=sulley.legos.xdr-module.html#xdr_pad"><a title="sulley.legos.xdr.xdr_pad" class="py-name" href="#" onclick="return doclink('link-17', 'xdr_pad', 'link-17');">xdr_pad</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">rendered</tt><tt class="py-op">)</tt> </tt>
+<a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line"> </tt>
+<a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">rendered</tt> </tt>
+</div></div><a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="sulley-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pedram.openrce.org">Sulley: Fuzzing Framework</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Wed Oct 19 23:24:35 2016
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

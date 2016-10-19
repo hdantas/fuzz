@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>sulley.utils.dcerpc</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="sulley-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pedram.openrce.org">Sulley: Fuzzing Framework</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="sulley-module.html">Package&nbsp;sulley</a> ::
+        <a href="sulley.utils-module.html">Package&nbsp;utils</a> ::
+        Module&nbsp;dcerpc
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="sulley.utils.dcerpc-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="sulley.utils.dcerpc-module.html">Module sulley.utils.dcerpc</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">math</tt> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">struct</tt> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-0" class="py-name" targets="Module sulley.legos.misc=sulley.legos.misc-module.html,Module sulley.utils.misc=sulley.utils.misc-module.html"><a title="sulley.legos.misc
+sulley.utils.misc" class="py-name" href="#" onclick="return doclink('link-0', 'misc', 'link-0');">misc</a></tt> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-comment">########################################################################################################################</tt> </tt>
+<a name="bind"></a><div id="bind-def"><a name="L6"></a><tt class="py-lineno"> 6</tt> <a class="py-toggle" href="#" id="bind-toggle" onclick="return toggle('bind');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="sulley.utils.dcerpc-module.html#bind">bind</a> <tt class="py-op">(</tt><tt class="py-param">uuid</tt><tt class="py-op">,</tt> <tt class="py-param">version</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="bind-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="bind-expanded"><a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line">    <tt class="py-docstring">'''</tt> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"><tt class="py-docstring">    Generate the data necessary to bind to the specified interface.</tt> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-docstring">    '''</tt> </tt>
+<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"> </tt>
+<a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line">    <tt class="py-name">major</tt><tt class="py-op">,</tt> <tt class="py-name">minor</tt> <tt class="py-op">=</tt> <tt class="py-name">version</tt><tt class="py-op">.</tt><tt class="py-name">split</tt><tt class="py-op">(</tt><tt class="py-string">"."</tt><tt class="py-op">)</tt> </tt>
+<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"> </tt>
+<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line">    <tt class="py-name">major</tt> <tt class="py-op">=</tt> <tt class="py-name">struct</tt><tt class="py-op">.</tt><tt class="py-name">pack</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;H"</tt><tt class="py-op">,</tt> <tt class="py-name">int</tt><tt class="py-op">(</tt><tt class="py-name">major</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line">    <tt class="py-name">minor</tt> <tt class="py-op">=</tt> <tt class="py-name">struct</tt><tt class="py-op">.</tt><tt class="py-name">pack</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;H"</tt><tt class="py-op">,</tt> <tt class="py-name">int</tt><tt class="py-op">(</tt><tt class="py-name">minor</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L15"></a><tt class="py-lineno">15</tt>  <tt class="py-line"> </tt>
+<a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line">    <tt id="link-1" class="py-name" targets="Function sulley.utils.dcerpc.bind()=sulley.utils.dcerpc-module.html#bind"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-1', 'bind', 'link-1');">bind</a></tt>  <tt class="py-op">=</tt> <tt class="py-string">"\x05\x00"</tt>                      <tt class="py-comment"># version 5.0</tt> </tt>
+<a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line">    <tt id="link-2" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-2', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x0b"</tt>                          <tt class="py-comment"># packet type = bind (11)</tt> </tt>
+<a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line">    <tt id="link-3" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-3', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x03"</tt>                          <tt class="py-comment"># packet flags = last/first flag set</tt> </tt>
+<a name="L19"></a><tt class="py-lineno">19</tt>  <tt class="py-line">    <tt id="link-4" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-4', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x10\x00\x00\x00"</tt>              <tt class="py-comment"># data representation</tt> </tt>
+<a name="L20"></a><tt class="py-lineno">20</tt>  <tt class="py-line">    <tt id="link-5" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-5', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x48\x00"</tt>                      <tt class="py-comment"># frag length: 72</tt> </tt>
+<a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line">    <tt id="link-6" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-6', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x00\x00"</tt>                      <tt class="py-comment"># auth length</tt> </tt>
+<a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line">    <tt id="link-7" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-7', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x00\x00\x00\x00"</tt>              <tt class="py-comment"># call id</tt> </tt>
+<a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line">    <tt id="link-8" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-8', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\xb8\x10"</tt>                      <tt class="py-comment"># max xmit frag (4280)</tt> </tt>
+<a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line">    <tt id="link-9" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-9', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\xb8\x10"</tt>                      <tt class="py-comment"># max recv frag (4280)</tt> </tt>
+<a name="L25"></a><tt class="py-lineno">25</tt>  <tt class="py-line">    <tt id="link-10" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-10', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x00\x00\x00\x00"</tt>              <tt class="py-comment"># assoc group</tt> </tt>
+<a name="L26"></a><tt class="py-lineno">26</tt>  <tt class="py-line">    <tt id="link-11" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-11', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x01"</tt>                          <tt class="py-comment"># number of ctx items (1)</tt> </tt>
+<a name="L27"></a><tt class="py-lineno">27</tt>  <tt class="py-line">    <tt id="link-12" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-12', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x00\x00\x00"</tt>                  <tt class="py-comment"># padding</tt> </tt>
+<a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line">    <tt id="link-13" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-13', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x00\x00"</tt>                      <tt class="py-comment"># context id (0)</tt> </tt>
+<a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line">    <tt id="link-14" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-14', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x01"</tt>                          <tt class="py-comment"># number of trans items (1)</tt> </tt>
+<a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line">    <tt id="link-15" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-15', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x00"</tt>                          <tt class="py-comment"># padding</tt> </tt>
+<a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line">    <tt id="link-16" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-16', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt id="link-17" class="py-name"><a title="sulley.legos.misc
+sulley.utils.misc" class="py-name" href="#" onclick="return doclink('link-17', 'misc', 'link-0');">misc</a></tt><tt class="py-op">.</tt><tt id="link-18" class="py-name" targets="Function sulley.utils.misc.uuid_str_to_bin()=sulley.utils.misc-module.html#uuid_str_to_bin"><a title="sulley.utils.misc.uuid_str_to_bin" class="py-name" href="#" onclick="return doclink('link-18', 'uuid_str_to_bin', 'link-18');">uuid_str_to_bin</a></tt><tt class="py-op">(</tt><tt class="py-name">uuid</tt><tt class="py-op">)</tt>      <tt class="py-comment"># abstract syntax</tt> </tt>
+<a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line">    <tt id="link-19" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-19', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt class="py-name">major</tt>                           <tt class="py-comment"># interface version</tt> </tt>
+<a name="L33"></a><tt class="py-lineno">33</tt>  <tt class="py-line">    <tt id="link-20" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-20', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt class="py-name">minor</tt>                           <tt class="py-comment"># interface version minor</tt> </tt>
+<a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line"> </tt>
+<a name="L35"></a><tt class="py-lineno">35</tt>  <tt class="py-line">    <tt class="py-comment"># transfer syntax 8a885d04-1ceb-11c9-9fe8-08002b104860 v2.0</tt> </tt>
+<a name="L36"></a><tt class="py-lineno">36</tt>  <tt class="py-line">    <tt id="link-21" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-21', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x04\x5d\x88\x8a\xeb\x1c\xc9\x11\x9f\xe8\x08\x00\x2b\x10\x48\x60"</tt> </tt>
+<a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line">    <tt id="link-22" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-22', 'bind', 'link-1');">bind</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x02\x00\x00\x00"</tt> </tt>
+<a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line"> </tt>
+<a name="L39"></a><tt class="py-lineno">39</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt id="link-23" class="py-name"><a title="sulley.utils.dcerpc.bind" class="py-name" href="#" onclick="return doclink('link-23', 'bind', 'link-1');">bind</a></tt> </tt>
+</div><a name="L40"></a><tt class="py-lineno">40</tt>  <tt class="py-line"> </tt>
+<a name="L41"></a><tt class="py-lineno">41</tt>  <tt class="py-line"> </tt>
+<a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line"><tt class="py-comment">########################################################################################################################</tt> </tt>
+<a name="bind_ack"></a><div id="bind_ack-def"><a name="L43"></a><tt class="py-lineno">43</tt> <a class="py-toggle" href="#" id="bind_ack-toggle" onclick="return toggle('bind_ack');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="sulley.utils.dcerpc-module.html#bind_ack">bind_ack</a> <tt class="py-op">(</tt><tt class="py-param">data</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="bind_ack-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="bind_ack-expanded"><a name="L44"></a><tt class="py-lineno">44</tt>  <tt class="py-line">    <tt class="py-docstring">'''</tt> </tt>
+<a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line"><tt class="py-docstring">    Ensure the data is a bind ack and that the</tt> </tt>
+<a name="L46"></a><tt class="py-lineno">46</tt>  <tt class="py-line"><tt class="py-docstring">    '''</tt> </tt>
+<a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line"> </tt>
+<a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line">    <tt class="py-comment"># packet type == bind ack (12)?</tt> </tt>
+<a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">data</tt><tt class="py-op">[</tt><tt class="py-number">2</tt><tt class="py-op">]</tt> <tt class="py-op">!=</tt> <tt class="py-string">"\x0c"</tt><tt class="py-op">:</tt> </tt>
+<a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">False</tt> </tt>
+<a name="L51"></a><tt class="py-lineno">51</tt>  <tt class="py-line"> </tt>
+<a name="L52"></a><tt class="py-lineno">52</tt>  <tt class="py-line">    <tt class="py-comment"># ack result == acceptance?</tt> </tt>
+<a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">data</tt><tt class="py-op">[</tt><tt class="py-number">36</tt><tt class="py-op">:</tt><tt class="py-number">38</tt><tt class="py-op">]</tt> <tt class="py-op">!=</tt> <tt class="py-string">"\x00\x00"</tt><tt class="py-op">:</tt> </tt>
+<a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">False</tt> </tt>
+<a name="L55"></a><tt class="py-lineno">55</tt>  <tt class="py-line"> </tt>
+<a name="L56"></a><tt class="py-lineno">56</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">True</tt> </tt>
+</div><a name="L57"></a><tt class="py-lineno">57</tt>  <tt class="py-line"> </tt>
+<a name="L58"></a><tt class="py-lineno">58</tt>  <tt class="py-line"> </tt>
+<a name="L59"></a><tt class="py-lineno">59</tt>  <tt class="py-line"><tt class="py-comment">########################################################################################################################</tt> </tt>
+<a name="request"></a><div id="request-def"><a name="L60"></a><tt class="py-lineno">60</tt> <a class="py-toggle" href="#" id="request-toggle" onclick="return toggle('request');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="sulley.utils.dcerpc-module.html#request">request</a> <tt class="py-op">(</tt><tt class="py-param">opnum</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="request-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="request-expanded"><a name="L61"></a><tt class="py-lineno">61</tt>  <tt class="py-line">    <tt class="py-docstring">'''</tt> </tt>
+<a name="L62"></a><tt class="py-lineno">62</tt>  <tt class="py-line"><tt class="py-docstring">    Return a list of packets broken into 5k fragmented chunks necessary to make the RPC request.</tt> </tt>
+<a name="L63"></a><tt class="py-lineno">63</tt>  <tt class="py-line"><tt class="py-docstring">    '''</tt> </tt>
+<a name="L64"></a><tt class="py-lineno">64</tt>  <tt class="py-line"> </tt>
+<a name="L65"></a><tt class="py-lineno">65</tt>  <tt class="py-line">    <tt class="py-name">frag_size</tt> <tt class="py-op">=</tt> <tt class="py-number">1000</tt>     <tt class="py-comment"># max frag size = 5840?</tt> </tt>
+<a name="L66"></a><tt class="py-lineno">66</tt>  <tt class="py-line">    <tt class="py-name">frags</tt>     <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L67"></a><tt class="py-lineno">67</tt>  <tt class="py-line"> </tt>
+<a name="L68"></a><tt class="py-lineno">68</tt>  <tt class="py-line">    <tt class="py-name">num_frags</tt> <tt class="py-op">=</tt> <tt class="py-name">int</tt><tt class="py-op">(</tt><tt class="py-name">math</tt><tt class="py-op">.</tt><tt class="py-name">ceil</tt><tt class="py-op">(</tt><tt class="py-name">float</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">/</tt> <tt class="py-name">float</tt><tt class="py-op">(</tt><tt class="py-name">frag_size</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L69"></a><tt class="py-lineno">69</tt>  <tt class="py-line"> </tt>
+<a name="L70"></a><tt class="py-lineno">70</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">xrange</tt><tt class="py-op">(</tt><tt class="py-name">num_frags</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L71"></a><tt class="py-lineno">71</tt>  <tt class="py-line">        <tt class="py-name">chunk</tt>       <tt class="py-op">=</tt> <tt class="py-name">data</tt><tt class="py-op">[</tt><tt class="py-name">i</tt> <tt class="py-op">*</tt> <tt class="py-name">frag_size</tt><tt class="py-op">:</tt><tt class="py-op">(</tt><tt class="py-name">i</tt><tt class="py-op">+</tt><tt class="py-number">1</tt><tt class="py-op">)</tt> <tt class="py-op">*</tt> <tt class="py-name">frag_size</tt><tt class="py-op">]</tt> </tt>
+<a name="L72"></a><tt class="py-lineno">72</tt>  <tt class="py-line">        <tt class="py-name">frag_length</tt> <tt class="py-op">=</tt> <tt class="py-name">struct</tt><tt class="py-op">.</tt><tt class="py-name">pack</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;H"</tt><tt class="py-op">,</tt> <tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">chunk</tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt class="py-number">24</tt><tt class="py-op">)</tt> </tt>
+<a name="L73"></a><tt class="py-lineno">73</tt>  <tt class="py-line">        <tt class="py-name">alloc_hint</tt>  <tt class="py-op">=</tt> <tt class="py-name">struct</tt><tt class="py-op">.</tt><tt class="py-name">pack</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;L"</tt><tt class="py-op">,</tt> <tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">chunk</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L74"></a><tt class="py-lineno">74</tt>  <tt class="py-line"> </tt>
+<a name="L75"></a><tt class="py-lineno">75</tt>  <tt class="py-line">        <tt class="py-name">flags</tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+<a name="L76"></a><tt class="py-lineno">76</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">i</tt> <tt class="py-op">==</tt> <tt class="py-number">0</tt><tt class="py-op">:</tt>              <tt class="py-name">flags</tt> <tt class="py-op">|=</tt> <tt class="py-number">0x1</tt>    <tt class="py-comment"># first frag</tt> </tt>
+<a name="L77"></a><tt class="py-lineno">77</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">i</tt> <tt class="py-op">==</tt> <tt class="py-name">num_frags</tt> <tt class="py-op">-</tt> <tt class="py-number">1</tt><tt class="py-op">:</tt>  <tt class="py-name">flags</tt> <tt class="py-op">|=</tt> <tt class="py-number">0x2</tt>    <tt class="py-comment"># last frag</tt> </tt>
+<a name="L78"></a><tt class="py-lineno">78</tt>  <tt class="py-line"> </tt>
+<a name="L79"></a><tt class="py-lineno">79</tt>  <tt class="py-line">        <tt id="link-24" class="py-name" targets="Class sulley.blocks.request=sulley.blocks.request-class.html,Function sulley.utils.dcerpc.request()=sulley.utils.dcerpc-module.html#request"><a title="sulley.blocks.request
+sulley.utils.dcerpc.request" class="py-name" href="#" onclick="return doclink('link-24', 'request', 'link-24');">request</a></tt>  <tt class="py-op">=</tt> <tt class="py-string">"\x05\x00"</tt>                   <tt class="py-comment"># version 5.0</tt> </tt>
+<a name="L80"></a><tt class="py-lineno">80</tt>  <tt class="py-line">        <tt id="link-25" class="py-name"><a title="sulley.blocks.request
+sulley.utils.dcerpc.request" class="py-name" href="#" onclick="return doclink('link-25', 'request', 'link-24');">request</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x00"</tt>                       <tt class="py-comment"># packet type = request (0)</tt> </tt>
+<a name="L81"></a><tt class="py-lineno">81</tt>  <tt class="py-line">        <tt id="link-26" class="py-name"><a title="sulley.blocks.request
+sulley.utils.dcerpc.request" class="py-name" href="#" onclick="return doclink('link-26', 'request', 'link-24');">request</a></tt> <tt class="py-op">+=</tt> <tt class="py-name">struct</tt><tt class="py-op">.</tt><tt class="py-name">pack</tt><tt class="py-op">(</tt><tt class="py-string">"B"</tt><tt class="py-op">,</tt> <tt class="py-name">flags</tt><tt class="py-op">)</tt>      <tt class="py-comment"># packet flags</tt> </tt>
+<a name="L82"></a><tt class="py-lineno">82</tt>  <tt class="py-line">        <tt id="link-27" class="py-name"><a title="sulley.blocks.request
+sulley.utils.dcerpc.request" class="py-name" href="#" onclick="return doclink('link-27', 'request', 'link-24');">request</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x10\x00\x00\x00"</tt>           <tt class="py-comment"># data representation</tt> </tt>
+<a name="L83"></a><tt class="py-lineno">83</tt>  <tt class="py-line">        <tt id="link-28" class="py-name"><a title="sulley.blocks.request
+sulley.utils.dcerpc.request" class="py-name" href="#" onclick="return doclink('link-28', 'request', 'link-24');">request</a></tt> <tt class="py-op">+=</tt> <tt class="py-name">frag_length</tt>                  <tt class="py-comment"># frag length</tt> </tt>
+<a name="L84"></a><tt class="py-lineno">84</tt>  <tt class="py-line">        <tt id="link-29" class="py-name"><a title="sulley.blocks.request
+sulley.utils.dcerpc.request" class="py-name" href="#" onclick="return doclink('link-29', 'request', 'link-24');">request</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x00\x00"</tt>                   <tt class="py-comment"># auth length</tt> </tt>
+<a name="L85"></a><tt class="py-lineno">85</tt>  <tt class="py-line">        <tt id="link-30" class="py-name"><a title="sulley.blocks.request
+sulley.utils.dcerpc.request" class="py-name" href="#" onclick="return doclink('link-30', 'request', 'link-24');">request</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x00\x00\x00\x00"</tt>           <tt class="py-comment"># call id</tt> </tt>
+<a name="L86"></a><tt class="py-lineno">86</tt>  <tt class="py-line">        <tt id="link-31" class="py-name"><a title="sulley.blocks.request
+sulley.utils.dcerpc.request" class="py-name" href="#" onclick="return doclink('link-31', 'request', 'link-24');">request</a></tt> <tt class="py-op">+=</tt> <tt class="py-name">alloc_hint</tt>                   <tt class="py-comment"># alloc hint</tt> </tt>
+<a name="L87"></a><tt class="py-lineno">87</tt>  <tt class="py-line">        <tt id="link-32" class="py-name"><a title="sulley.blocks.request
+sulley.utils.dcerpc.request" class="py-name" href="#" onclick="return doclink('link-32', 'request', 'link-24');">request</a></tt> <tt class="py-op">+=</tt> <tt class="py-string">"\x00\x00"</tt>                   <tt class="py-comment"># context id (0)</tt> </tt>
+<a name="L88"></a><tt class="py-lineno">88</tt>  <tt class="py-line">        <tt id="link-33" class="py-name"><a title="sulley.blocks.request
+sulley.utils.dcerpc.request" class="py-name" href="#" onclick="return doclink('link-33', 'request', 'link-24');">request</a></tt> <tt class="py-op">+=</tt> <tt class="py-name">struct</tt><tt class="py-op">.</tt><tt class="py-name">pack</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;H"</tt><tt class="py-op">,</tt> <tt class="py-name">opnum</tt><tt class="py-op">)</tt>     <tt class="py-comment"># opnum</tt> </tt>
+<a name="L89"></a><tt class="py-lineno">89</tt>  <tt class="py-line">        <tt id="link-34" class="py-name"><a title="sulley.blocks.request
+sulley.utils.dcerpc.request" class="py-name" href="#" onclick="return doclink('link-34', 'request', 'link-24');">request</a></tt> <tt class="py-op">+=</tt> <tt class="py-name">chunk</tt> </tt>
+<a name="L90"></a><tt class="py-lineno">90</tt>  <tt class="py-line"> </tt>
+<a name="L91"></a><tt class="py-lineno">91</tt>  <tt class="py-line">        <tt class="py-name">frags</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt id="link-35" class="py-name"><a title="sulley.blocks.request
+sulley.utils.dcerpc.request" class="py-name" href="#" onclick="return doclink('link-35', 'request', 'link-24');">request</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L92"></a><tt class="py-lineno">92</tt>  <tt class="py-line"> </tt>
+<a name="L93"></a><tt class="py-lineno">93</tt>  <tt class="py-line">    <tt class="py-comment"># you don't have to send chunks out individually. so make life easier for the user and send them all at once.</tt> </tt>
+<a name="L94"></a><tt class="py-lineno">94</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-string">""</tt><tt class="py-op">.</tt><tt id="link-36" class="py-name" targets="Method sulley.sessions.web_interface_thread.join()=sulley.sessions.web_interface_thread-class.html#join"><a title="sulley.sessions.web_interface_thread.join" class="py-name" href="#" onclick="return doclink('link-36', 'join', 'link-36');">join</a></tt><tt class="py-op">(</tt><tt class="py-name">frags</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L95"></a><tt class="py-lineno">95</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="sulley-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pedram.openrce.org">Sulley: Fuzzing Framework</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Wed Oct 19 23:24:35 2016
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
