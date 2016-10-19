@@ -5,9 +5,6 @@ from sulley import (
     sessions
 )
 
-# Fuzz HTTP request (for /vulnerableapi)
-# Show on screen what a HTTP request looks like and spec for vulnerableapi
-# Show solution
 host = 'vulnerableapi.herokuapp.com'
 port = 443
 
